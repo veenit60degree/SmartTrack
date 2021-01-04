@@ -1,0 +1,1678 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_bgbig"
+    android:id="@+id/layoutMain"
+
+    >
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyle"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+         />
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/uploadImagesBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/upload_images"
+        app:backgroundTint="@color/text_new_heading"
+        android:tint="@android:color/white"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="@dimen/margin_short_5"
+        android:layout_marginRight="@dimen/margin_15"
+        android:layout_marginBottom="@dimen/view_height_50"
+
+
+
+        />
+
+
+
+    <LinearLayout
+        android:id="@+id/topliner"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/progressBar2"
+        android:layout_toEndOf="@+id/progressBar2">
+
+
+
+    <include
+        android:id="@+id/ActionbarDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/action_bar"
+        />
+
+
+        <com.customfont.textview.CalibriBoldTextView
+            android:id="@+id/inspReqTxtVw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/red_hover"
+            android:text="@string/insp_req"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_17"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:padding="@dimen/margin_short_7"
+            android:visibility="gone"
+
+            />
+
+
+    <ScrollView
+        android:id="@+id/locDetailScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ActionbarDetail"
+        android:fillViewport="true"
+        >
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+                <com.tracking.constants.ZoomView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/margin_15"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_15"
+                    android:paddingRight="@dimen/margin_10"
+                    app:cardCornerRadius="20dp">
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        >
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/contnrNoInputType111"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/margin_short_1"
+                            android:theme="@style/AppTheme.EditText"
+
+                            >
+
+
+                            <EditText
+                                android:id="@+id/contnrNoEditTexttt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+
+                                />
+                        </android.support.design.widget.TextInputLayout>
+
+
+
+                        <LinearLayout
+                            android:id="@+id/container_bar_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/view_height_45"
+                            android:background="@color/detail_text_dark"
+                            android:orientation="horizontal"
+                            android:visibility="gone"
+
+                            >
+
+
+                            <com.customfont.textview.FuturaBkTextView
+                                android:id="@+id/serial_no_detail_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size_15"
+                                android:textAllCaps="true"
+                                android:gravity="center_horizontal"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1.16"
+
+                                />
+
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+
+                            <RelativeLayout
+                                android:id="@+id/billToLay"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:paddingTop="@dimen/margin_15"
+
+
+                                android:visibility="gone"
+                                >
+
+
+                                <TextView
+                                    android:id="@+id/containerInfoTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/bill_to"
+                                    android:textColor="@color/text_colornew"
+                                    android:textSize="@dimen/text_size_15"
+
+
+                                    />
+
+
+                                <com.customfont.textview.FuturaBkTextView
+                                    android:id="@+id/billToTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:textColor="@color/text_colornew"
+                                    android:textSize="@dimen/text_size_14"
+                                    android:paddingRight="@dimen/margin_short_5"
+                                    android:layout_alignParentRight="true"
+
+
+                                    />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/username_border"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="@dimen/margin_15"
+                                    android:layout_marginBottom="@dimen/margin_15"
+                                    android:layout_below="@+id/containerInfoTV"
+
+                                    />
+
+
+                            </RelativeLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/contactLay"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginTop="@dimen/margin_20"
+                                android:paddingLeft="@dimen/margin_short_8"
+                                android:paddingRight="@dimen/margin_short_8"
+                                android:background="@color/detail_text_light"
+                                android:layout_below="@+id/billToLay"
+                                >
+
+                                <RelativeLayout
+                                    android:id="@+id/containerlay"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    >
+
+
+
+                                    <com.customfont.textview.FuturaMediumTextView
+                                        android:id="@+id/contanerTitleTV"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/Container_No"
+                                        android:textColor="@color/text_colornew"
+                                        android:textSize="@dimen/text_size_15"
+
+
+                                        />
+                                    <RelativeLayout
+                                        android:id="@+id/editFieldView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+
+
+                                        >
+
+                                        <EditText
+                                            android:id="@+id/contnrNoEditText"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="@dimen/view_height_40"
+                                            android:layout_alignParentRight="true"
+                                            android:paddingLeft="@dimen/margin_short_9"
+                                            android:paddingRight="@dimen/margin_short_9"
+                                            android:textColor="@color/text_colornew"
+                                            android:textSize="@dimen/text_size_16"
+                                            android:textColorHint="@color/white_hover"
+                                            android:imeOptions="actionNext"
+                                            android:textAllCaps="true"
+                                            android:inputType="textCapSentences"
+                                            android:theme="@style/AppTheme.EditText"
+                                            android:singleLine="true"
+                                            android:hint="@string/cont_number_format"
+                                            android:gravity="right"
+
+                                            />
+
+                                    </RelativeLayout>
+
+                                    <com.customfont.textview.FuturaBkTextView
+                                        android:id="@+id/container_name_tv"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/text_colornew"
+                                        android:textSize="@dimen/text_size_14"
+                                        android:text=""
+                                        android:layout_alignParentRight="true"
+                                        />
+
+                                </RelativeLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/username_border"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="@dimen/margin_10"
+                                    android:layout_marginBottom="@dimen/margin_10"
+
+
+                                    />
+                                <RelativeLayout
+                                    android:id="@+id/chasistypelay"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toLeftOf="@+id/chassiesNoTV"
+                                    android:layout_below="@+id/contInfoLay"
+                                    android:enabled="false"
+                                    >
+
+
+                                    <com.customfont.textview.FuturaMediumTextView
+                                        android:id="@+id/chasisTypeSizeTV"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Container Type Size"
+                                        android:textColor="@color/text_colornew"
+
+                                        android:textSize="@dimen/text_size_14"
+                                        android:paddingRight="@dimen/margin_short_5"
+                                        android:paddingTop="@dimen/margin_short_7"
+                                        android:paddingBottom="@dimen/margin_short_6"
+
+                                        android:singleLine="true"
+
+                                        />
+
+                                    <com.customfont.textview.FuturaMediumTextView
+                                        android:id="@+id/container_type_tv"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/red_text"
+                                        android:textSize="@dimen/text_size_14"
+                                        android:paddingRight="@dimen/margin_short_1"
+                                        android:gravity="right"
+                                        android:layout_centerVertical="true"
+                                        android:textStyle="bold"
+                                        android:paddingBottom="@dimen/margin_short_2"
+                                        android:layout_alignParentRight="true"
+                                       android:layout_marginLeft="@dimen/view_height_190"
+
+                                        />
+
+                                </RelativeLayout>
+
+
+
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/username_border"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="@dimen/margin_10"
+                                    android:layout_marginBottom="@dimen/margin_10"
+
+                                    android:layout_below="@+id/jobtypeTV"
+                                    />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+
+                                    >
+
+
+                                    <RelativeLayout
+                                        android:id="@+id/loadTypeLay"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:paddingTop="@dimen/margin_short_2"
+                                        android:layout_weight="1"
+                                        >
+
+
+
+                                        <com.customfont.textview.FuturaMediumTextView
+                                            android:id="@+id/loadTypeTitleTV"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/load_type"
+                                            android:textColor="@color/text_colornew"
+
+                                            android:textSize="@dimen/text_size_15"
+                                            android:background="@color/detail_text_light"
+                                            android:paddingLeft="@dimen/margin_short_3"
+                                            android:paddingRight="@dimen/margin_short_3"
+
+
+                                            />
+
+                                        <RelativeLayout
+                                            android:layout_width="@dimen/view_height_250"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_toRightOf="@+id/loadTypeTitleTV"
+                                            >
+
+                                            <com.customfont.textview.FuturaBkTextView
+                                                android:id="@+id/loadTypeTxtVw"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/text_colornew"
+                                                android:textSize="@dimen/text_size_14"
+                                                android:paddingRight="@dimen/margin_short_1"
+                                                android:layout_alignParentRight="true"
+
+
+                                                android:maxLines="2"
+
+                                                />
+                                        </RelativeLayout>
+
+
+                                    </RelativeLayout>
+
+
+
+
+                                </LinearLayout>
+
+
+
+
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/username_border"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="@dimen/margin_15"
+                                    android:layout_marginBottom="@dimen/margin_short_5"
+                                    />
+
+
+                                <RelativeLayout
+                                    android:id="@+id/updateChessisBtn"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toLeftOf="@+id/chassiesNoTV"
+                                    android:layout_below="@+id/contInfoLay"
+                                    android:enabled="false"
+                                    >
+
+
+                                    <com.customfont.textview.FuturaMediumTextView
+                                        android:id="@+id/chassisTitleTV"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/Chassis_No"
+                                        android:textColor="@color/text_colornew"
+
+                                        android:textSize="@dimen/text_size_15"
+                                        android:paddingRight="@dimen/margin_short_5"
+                                        android:paddingTop="@dimen/margin_short_7"
+                                        android:paddingBottom="@dimen/margin_short_6"
+
+
+
+                                        />
+
+                                    <com.customfont.textview.FuturaBkTextView
+                                        android:id="@+id/chassiesNoTV"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/text_colornew"
+                                        android:textSize="@dimen/text_size_14"
+                                        android:paddingRight="@dimen/margin_short_4"
+                                        android:paddingTop="@dimen/margin_short_7"
+                                        android:paddingBottom="@dimen/margin_short_6"
+                                        android:layout_toLeftOf="@+id/editChessisBtn"
+                                        android:layout_toRightOf="@+id/chassisTitleTV"
+                                        android:gravity="right"
+
+                                        />
+
+                                    <ImageView
+                                        android:id="@+id/editChessisBtn"
+                                        android:layout_width="@dimen/margin_26"
+                                        android:layout_height="@dimen/margin_26"
+                                        android:src="@drawable/edit"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_marginTop="@dimen/margin_short_3"
+                                        android:padding="@dimen/margin_short_5"
+                                        android:visibility="gone"
+
+
+                                        />
+
+
+
+                                </RelativeLayout>
+
+
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/username_border"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="@dimen/margin_10"
+                                    android:layout_marginBottom="@dimen/margin_10"
+
+                                    android:layout_below="@+id/jobtypeTV"
+                                    />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+
+                                    >
+
+
+                                    <RelativeLayout
+                                        android:id="@+id/bokinglay"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:paddingTop="@dimen/margin_short_2"
+                                        android:layout_weight="1"
+                                        >
+
+
+
+                                        <com.customfont.textview.FuturaMediumTextView
+                                            android:id="@+id/nameTitleTV"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/ref_no"
+                                            android:textColor="@color/text_colornew"
+
+                                            android:textSize="@dimen/text_size_15"
+                                            android:background="@color/detail_text_light"
+                                            android:paddingLeft="@dimen/margin_short_3"
+                                            android:paddingRight="@dimen/margin_short_3"
+
+
+                                            />
+
+                                        <RelativeLayout
+                                            android:layout_width="@dimen/view_height_250"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_toRightOf="@+id/nameTitleTV"
+                                            >
+
+                                            <com.customfont.textview.FuturaBkTextView
+                                                android:id="@+id/refNoTV"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/text_colornew"
+                                                android:textSize="@dimen/text_size_14"
+                                                android:paddingRight="@dimen/margin_short_1"
+                                                android:layout_alignParentRight="true"
+
+
+                                                android:maxLines="2"
+
+                                                />
+                                        </RelativeLayout>
+
+
+                                    </RelativeLayout>
+
+
+
+
+                                </LinearLayout>
+
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/username_border"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="@dimen/margin_10"
+
+
+                                    />
+
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+
+
+
+
+                        <LinearLayout
+                            android:id="@+id/hideKeyboardLay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+
+                            android:paddingBottom="@dimen/margin_25"
+                            android:background="@color/detail_text_light"
+                            >
+
+                            <RelativeLayout
+                                android:id="@+id/contInfoLay"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                >
+
+                                <com.customfont.textview.FuturaMediumTextView
+                                    android:id="@+id/apnmtTitleTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingBottom="@dimen/margin_10"
+                                    android:paddingLeft="@dimen/margin_10"
+                                    android:paddingRight="@dimen/margin_short_5"
+                                    android:paddingTop="@dimen/margin_10"
+
+                                    android:text="@string/reservation_no"
+
+                                    android:textColor="@color/text_colornew"
+
+                                    android:textSize="@dimen/text_size_15" />
+
+
+                                <com.customfont.textview.FuturaBkTextView
+                                    android:id="@+id/appointmentTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:paddingBottom="@dimen/margin_10"
+                                    android:paddingLeft="@dimen/margin_10"
+                                    android:paddingRight="@dimen/margin_short_5"
+                                    android:paddingTop="@dimen/margin_10"
+                                    android:textColor="@color/text_colornew"
+                                    android:textSize="@dimen/text_size_14"
+                                    android:layout_alignParentRight="true"
+
+                                    />
+
+
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/username_border"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="@dimen/margin_short_5"
+                                android:layout_marginBottom="@dimen/margin_short_5"
+
+                                android:layout_below="@+id/jobtypeTV"
+                                />
+
+
+                            <RelativeLayout
+                                android:id="@+id/cpoNumberLay"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                >
+
+                                <com.customfont.textview.FuturaMediumTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingBottom="@dimen/margin_10"
+                                    android:paddingLeft="@dimen/margin_10"
+                                    android:paddingRight="@dimen/margin_short_5"
+                                    android:paddingTop="@dimen/margin_10"
+
+                                    android:text="@string/po_number"
+
+                                    android:textColor="@color/text_colornew"
+
+                                    android:textSize="@dimen/text_size_15" />
+
+
+                                <com.customfont.textview.FuturaBkTextView
+                                    android:id="@+id/poNumberTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:paddingBottom="@dimen/margin_10"
+                                    android:paddingLeft="@dimen/margin_10"
+                                    android:paddingRight="@dimen/margin_short_5"
+                                    android:paddingTop="@dimen/margin_10"
+                                    android:textColor="@color/text_colornew"
+                                    android:textSize="@dimen/text_size_14"
+                                    android:layout_alignParentRight="true"
+
+                                    />
+
+
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/username_border"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="@dimen/margin_short_5"
+                                android:layout_marginBottom="@dimen/margin_short_5"
+
+                                android:layout_below="@+id/jobtypeTV"
+                                />
+
+
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <com.customfont.textview.FuturaMediumTextView
+                                    android:id="@+id/contInfoTitleTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:paddingBottom="@dimen/margin_10"
+                                    android:paddingLeft="@dimen/margin_10"
+                                    android:paddingTop="@dimen/margin_10"
+                                    android:text="@string/Container_info"
+
+                                    android:textColor="@color/text_colornew"
+                                    android:textSize="@dimen/text_size_15"
+                                    />
+
+
+
+
+
+                                <com.customfont.textview.FuturaBkTextView
+                                    android:id="@+id/ReseveDateTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+
+                                    android:paddingBottom="@dimen/margin_10"
+                                    android:paddingLeft="@dimen/margin_10"
+                                    android:paddingTop="@dimen/margin_10"
+
+
+                                    android:paddingRight="@dimen/margin_10"
+                                    android:layout_marginLeft="@dimen/margin_short_5"
+
+                                    android:textColor="@color/text_colornew"
+                                    android:textSize="@dimen/text_size_15"
+                                    />
+
+
+
+                            </RelativeLayout>
+
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/username_border"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="@dimen/margin_short_3"
+                                android:layout_marginBottom="@dimen/margin_short_5"
+
+
+                                />
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+
+                                <com.customfont.textview.FuturaMediumTextView
+                                    android:id="@+id/truckTitleTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/Truck_No"
+                                    android:textColor="@color/text_colornew"
+
+                                    android:textSize="@dimen/text_size_15"
+                                    android:paddingLeft="@dimen/margin_10"
+                                    android:paddingRight="@dimen/margin_10"
+                                    android:paddingTop="@dimen/margin_short_7"
+                                    android:paddingBottom="@dimen/margin_short_6"
+                                    android:singleLine="true"
+
+
+
+                                    />
+
+
+                                <com.customfont.textview.FuturaBkTextView
+                                    android:id="@+id/truckNoTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/text_colornew"
+                                    android:textSize="@dimen/text_size_14"
+                                    android:paddingRight="@dimen/margin_short_8"
+                                    android:paddingTop="@dimen/margin_short_7"
+                                    android:paddingBottom="@dimen/margin_short_6"
+
+                                    android:layout_alignParentRight="true"
+
+                                    android:singleLine="true"
+                                    />
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/username_border"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="@dimen/margin_10"
+                                android:layout_marginBottom="@dimen/margin_15"
+
+
+                                />
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <com.customfont.textview.FuturaMediumTextView
+                                    android:id="@+id/shippingLineTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:paddingLeft="@dimen/margin_10"
+                                    android:paddingRight="@dimen/margin_short_3"
+                                    android:text="@string/Shipping_Line"
+                                    android:textColor="@color/text_colornew"
+                                    android:textSize="@dimen/text_size_15" />
+
+                                <com.customfont.textview.FuturaBkTextView
+                                    android:id="@+id/shippingLineAddTV"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_alignParentRight="true"
+                                    android:layout_toRightOf="@+id/shippingLineTV"
+                                    android:paddingLeft="@dimen/margin_short_7"
+                                    android:background="@color/detail_text_light"
+                                    android:paddingRight="@dimen/margin_10"
+                                    android:textColor="@color/text_colornew"
+                                    android:textSize="@dimen/text_size_14"
+                                    android:gravity="right"
+
+                                    />
+
+                            </RelativeLayout>
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/username_border"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="@dimen/margin_15"
+
+
+                                />
+
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <com.customfont.textview.FuturaMediumTextView
+                                    android:id="@+id/remarkTitleTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:paddingTop="@dimen/margin_short_2"
+                                    android:singleLine="true"
+                                    android:text="@string/Remark"
+
+                                    android:textColor="@color/text_colornew"
+                                    android:layout_marginTop="@dimen/margin_10"
+                                    android:paddingLeft="@dimen/margin_10"
+
+                                    android:textSize="@dimen/text_size_15" />
+
+                                <com.customfont.textview.FuturaBkTextView
+                                    android:id="@+id/remarknoteV"
+                                    android:layout_width="@dimen/view_height_100"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/margin_15"
+                                    android:textColor="@color/text_colornew"
+                                    android:layout_toRightOf="@+id/remarkTitleTV"
+                                    android:layout_marginLeft="@dimen/margin_25"
+                                    android:gravity="right"
+                                    android:layout_marginTop="@dimen/margin_14"
+                                    android:textStyle="bold"
+                                    android:paddingLeft="@dimen/margin_29"
+                                    android:layout_toLeftOf="@+id/remarkImgBtn"
+                                    android:ellipsize="marquee"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:scrollbarFadeDuration="5"
+                                    android:scrollHorizontally="true"
+                                    android:singleLine="true"
+
+                                    />
+
+
+                                <ImageView
+                                    android:id="@+id/remarkImgBtn"
+                                    android:layout_width="@dimen/view_height_35"
+                                    android:layout_height="32dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginLeft="@dimen/margin_10"
+                                    android:layout_marginRight="@dimen/margin_short_5"
+                                    android:layout_marginTop="@dimen/margin_short_7"
+                                    android:paddingLeft="@dimen/margin_10"
+                                    android:paddingRight="@dimen/margin_10"
+                                    android:src="@drawable/edit">
+
+                                </ImageView>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <View
+                                    android:id="@+id/notesview"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/username_border"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="@dimen/margin_10"
+                                    android:layout_marginBottom="@dimen/margin_15"
+
+
+                                    />
+
+
+                                <com.customfont.textview.CalibriBoldTextView
+                                    android:id="@+id/msgTitleTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:paddingTop="@dimen/margin_short_2"
+                                    android:singleLine="true"
+                                    android:text="@string/Text_Msg"
+
+                                    android:textColor="@color/text_colornew"
+                                    android:textStyle="bold"
+                                    android:paddingLeft="@dimen/margin_10"
+                                    android:layout_below="@+id/notesview"
+                                    android:textSize="@dimen/text_size_17" />
+
+                                <com.customfont.textview.FuturaMediumTextView
+                                    android:id="@+id/noteTV"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:textSize="@dimen/margin_15"
+                                    android:textColor="@color/red_text"
+                                    android:textStyle="bold"
+                                    android:gravity="right"
+                                    android:layout_below="@+id/notesview"
+                                    android:layout_marginRight="@dimen/margin_15"
+                                    android:layout_toRightOf="@+id/msgTitleTV"
+                                    android:layout_marginLeft="@dimen/margin_25"
+                                    android:ellipsize="marquee"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:scrollHorizontally="true"
+                                    android:singleLine="true"
+                                    android:scrollbarFadeDuration="5"
+
+
+                                    />
+
+                            </RelativeLayout>
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/framAnimMsg"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                android:background="@color/blue_transparent"
+                                android:layout_marginHorizontal="@dimen/margin_10"
+                                android:layout_above="@id/noteTV"
+                                android:paddingBottom="@dimen/margin_short_5"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerInParent="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginVertical="@dimen/margin_20"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="@dimen/margin_15"
+                                android:layout_marginTop="@dimen/margin_15"
+                                android:paddingRight="@dimen/margin_10"
+                                app:cardCornerRadius="@dimen/margin_10"
+                                android:visibility="gone"
+
+                                >
+
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/blue_transparent"
+                                    >
+
+
+                                    <com.customfont.textview.FuturaBkTextView
+                                        android:id="@+id/ConfirmTitleTV"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/Message_details"
+                                        android:gravity="center_horizontal"
+                                        android:textSize="@dimen/text_size_19"
+                                        android:textColor="@color/white"
+                                        android:paddingTop="@dimen/margin_short_2"
+
+                                        />
+
+                                    <android.support.v4.widget.NestedScrollView
+                                        android:id="@+id/remarksDetailScrollVw"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:paddingBottom="@dimen/margin_short_5"
+                                        android:paddingTop="@dimen/margin_short_5"
+                                        android:layout_below="@+id/ConfirmTitleTV"
+                                        >
+                                        <com.customfont.textview.FuturaBkTextView
+                                            android:id="@+id/msgTextView"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="@color/white_hover"
+                                            android:textSize="@dimen/text_size_16"
+                                            android:textColorHint="@color/white_hover"
+                                            android:gravity="top|left"
+                                            android:inputType="textMultiLine"
+                                            android:lines="10"
+                                            android:padding="@dimen/margin_10"
+                                            android:scrollHorizontally="false"
+                                            android:theme="@style/AppTheme.EditText"
+                                            android:hint="@string/Text_Msg"
+                                            android:layout_below="@+id/ConfirmTitleTV"
+
+                                            />
+                                    </android.support.v4.widget.NestedScrollView>
+
+                                    <com.customfont.textview.MontserraBoldTextView
+                                        android:id="@+id/closeMsgView"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentTop="true"
+                                        android:textStyle="bold"
+                                        android:text="Close"
+                                        android:textColor="@color/red_text"
+                                        android:padding="@dimen/margin_short_7"
+
+                                        />
+
+
+
+                                </RelativeLayout>
+
+
+                            </android.support.v7.widget.CardView>
+
+
+
+                            <RelativeLayout
+                                android:id="@+id/editFieldTareView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                >
+
+                                <View
+                                    android:id="@+id/tareview"
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/username_border"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="@dimen/margin_15"
+                                    android:layout_marginBottom="@dimen/margin_15"
+                                    />
+
+
+
+                                <com.customfont.textview.FuturaMediumTextView
+                                    android:id="@+id/TareWtTitleTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingTop="@dimen/margin_short_2"
+                                    android:singleLine="true"
+                                    android:text="@string/tare_Weight"
+                                    android:textColor="@color/text_colornew"
+                                    android:paddingLeft="@dimen/margin_10"
+                                    android:layout_marginTop="@dimen/view_height_25"
+                                    android:textSize="@dimen/text_size_15"
+                                    android:visibility="gone"
+                                    />
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:id="@+id/tareWeightInputType"
+                                    android:layout_width="@dimen/view_height_100"
+                                    android:layout_height="wrap_content"
+                                    android:theme="@style/AppTheme.EditText"
+                                    android:layout_marginTop="@dimen/margin_25"
+                                    android:layout_alignParentRight="true"
+                                    android:visibility="gone"
+                                    >
+
+
+                                    <com.customfont.edittext.FuturaBkEditText
+                                        android:id="@+id/tareWeightEditText"
+                                        android:layout_width="@dimen/view_height_100"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/text_colornew"
+                                        android:textSize="@dimen/text_size_16"
+                                        android:textColorHint="@color/white_hover"
+                                        android:imeOptions="actionDone"
+                                        android:inputType="numberDecimal"
+                                        android:theme="@style/AppTheme.EditText"
+                                        android:singleLine="true"
+                                        android:hint="@string/tare_Weight"
+                                        />
+                                </android.support.design.widget.TextInputLayout>
+
+                                <View
+                                    android:id="@+id/viewuplodeimg"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:background="@color/username_border"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="@dimen/margin_20"
+                                    android:layout_marginBottom="@dimen/margin_short_5"
+                                    android:layout_below="@+id/TareWtTitleTV"
+                                    />
+
+                                <com.customfont.textview.FuturaMediumTextView
+                                    android:id="@+id/hiddenUploadView"
+                                    android:layout_width="@dimen/view_height_95"
+                                    android:layout_height="@dimen/view_height_95"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="@dimen/margin_short_7"
+                                    android:layout_marginLeft="@dimen/margin_short_7"
+                                    android:layout_marginTop="@dimen/margin_29"
+                                    android:layout_below="@+id/viewuplodeimg"
+                                    android:visibility="gone"
+                                    />
+
+
+
+                                <RelativeLayout
+                                    android:id="@+id/uploadMediaLay"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/view_height_50"
+                                    android:orientation="horizontal"
+                                    android:layout_marginRight="@dimen/margin_short_7"
+                                    android:layout_marginLeft="@dimen/margin_short_7"
+                                    android:layout_below="@+id/viewuplodeimg"
+                                    android:visibility="gone"
+                                    >
+
+                                    <TextView
+                                        android:id="@+id/uploadImgTV"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/UploadImage"
+                                        android:textColor="@color/text_colornew"
+                                        android:textSize="@dimen/text_size_15"
+                                        android:paddingTop="@dimen/margin_short_2"
+                                        android:paddingBottom="@dimen/margin_short_6"
+                                        android:singleLine="true"
+                                        android:layout_centerVertical="true"
+                                        />
+
+                                    <ImageView
+                                        android:id="@+id/uploadImgBtn"
+                                        android:layout_width="@dimen/view_height_50"
+                                        android:layout_height="@dimen/view_height_50"
+                                        android:src="@drawable/upload_image"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_marginRight="@dimen/margin_10"
+                                        android:scaleType="centerCrop"
+                                        />
+
+
+                                </RelativeLayout>
+
+
+
+
+                            </RelativeLayout>
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+                </com.tracking.constants.ZoomView>
+
+                <TextView
+                    android:id="@+id/addressTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address"
+                    android:textColor="@color/text_new_heading"
+
+                    android:textSize="@dimen/text_size_20"
+                    android:layout_marginLeft="@dimen/margin_20"
+                    android:textStyle="bold"
+
+
+                    android:paddingTop="@dimen/margin_short_6"
+
+
+                    />
+
+
+                <com.tracking.constants.ZoomView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cardAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/margin_15"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/margin_15"
+                        android:layout_marginTop="@dimen/margin_short_5"
+                        app:cardCornerRadius="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_below="@+id/chassiesNoTV"
+                            android:layout_marginTop="@dimen/margin_15"
+                            android:paddingLeft="@dimen/margin_short_8"
+                            android:paddingRight="@dimen/margin_short_8"
+                            android:layout_marginBottom="@dimen/margin_15"
+                            >
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_short_5"
+
+                                >
+
+                                <com.customfont.textview.FuturaMediumTextView
+                                    android:id="@+id/originTitleTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/Origin_address"
+                                    android:textColor="@color/text_colornew"
+
+                                    android:textSize="@dimen/text_size_17"
+
+                                    android:paddingTop="@dimen/margin_short_6"
+                                    android:paddingBottom="@dimen/margin_short_2"
+
+                                    />
+
+
+                                <!--<com.customfont.textview.FuturaMediumTextView-->
+                                <!--android:id="@+id/originTV"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:textColor="@color/text_colornew"-->
+                                <!--android:textSize="@dimen/text_size_12"-->
+
+                                <!--android:paddingRight="@dimen/margin_short_8"-->
+                                <!--android:paddingLeft="@dimen/margin_10"-->
+                                <!--android:layout_alignParentRight="true"-->
+
+                                <!--/>-->
+
+
+
+
+                            </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/margin_short_8">
+
+                                <ImageView
+                                    android:id="@+id/location_pointer_iv"
+                                    android:layout_width="@dimen/margin_25"
+                                    android:layout_height="@dimen/margin_25"
+                                    android:src="@drawable/ic_place_green24px"
+                                    android:layout_marginLeft="@dimen/margin_short_2"
+                                    android:layout_marginTop="@dimen/margin_short_5"
+                                    android:layout_below="@+id/pickup_loc_tv"
+                                    />
+
+                                <com.customfont.textview.FuturaBkTextView
+                                    android:id="@+id/originAddressTV"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/text_colornew"
+                                    android:textSize="@dimen/text_size_14"
+                                    android:paddingRight="@dimen/margin_10"
+                                    android:paddingTop="@dimen/margin_short_6"
+                                    android:paddingBottom="@dimen/margin_short_6"
+                                    android:paddingLeft="@dimen/margin_10"
+                                    android:minLines="2"
+                                    android:maxLines="5"
+                                    android:layout_toRightOf="@+id/location_pointer_iv"
+
+                                    />
+
+                            </RelativeLayout>
+
+
+
+                         <!--   <LinearLayout
+                                android:id="@+id/originAddLay1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+
+
+
+                                >-->
+
+
+                                <com.customfont.textview.FuturaBkTextView
+                                    android:id="@+id/originDropDateTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/loc_pink"
+                                    android:textSize="@dimen/text_size_12"
+                                    android:text="@string/pickup_date"
+                                    android:textAllCaps="false"
+                                    android:gravity="left"
+                                    android:paddingTop="@dimen/margin_short_5"
+                                    android:paddingBottom="@dimen/margin_short_5"
+                                    android:paddingLeft="@dimen/margin_short_7"
+                                    android:paddingRight="@dimen/margin_10"
+
+                                    android:background="@drawable/loc_pink_drawable"
+
+                                    android:layout_marginTop="@dimen/margin_short_5"
+                                    android:layout_marginLeft="@dimen/view_height_36"
+                                    android:layout_marginRight="@dimen/margin_short_8"
+                                    android:visibility="gone"
+
+
+                                    />
+
+
+
+
+                         <!--   </LinearLayout>
+-->
+
+
+                        <!--<LinearLayout
+                            android:id="@+id/originAddLay2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="@dimen/margin_short_8"
+                            android:layout_marginLeft="@dimen/view_height_36"
+                            android:layout_marginRight="@dimen/margin_short_8"
+
+
+                            >-->
+                            <!--originDropTimeTV-->
+                            <com.customfont.textview.FuturaBkTextView
+                                android:id="@+id/originResNumTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/loc_light_blue"
+                                android:text="@string/res_no"
+                                android:textSize="@dimen/text_size_12"
+                                android:textAllCaps="false"
+                                android:gravity="left"
+                                android:paddingTop="@dimen/margin_short_5"
+                                android:paddingBottom="@dimen/margin_short_5"
+                                android:paddingLeft="@dimen/margin_short_7"
+                                android:paddingRight="@dimen/margin_10"
+
+                                android:layout_toRightOf="@+id/location_pointer_iv"
+                                android:background="@drawable/loc_light_blue_drwable"
+
+                                android:layout_marginTop="@dimen/margin_short_8"
+                                android:layout_marginLeft="@dimen/view_height_36"
+                                android:layout_marginRight="@dimen/margin_short_8"
+                                android:visibility="gone"
+
+
+                                />
+
+
+                      <!--      <com.customfont.textview.FuturaBkTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/text_size_14"
+                                android:paddingRight="@dimen/margin_10"
+                                android:paddingBottom="@dimen/margin_short_6"
+                                android:layout_marginTop="@dimen/margin_short_8"
+                                android:paddingLeft="@dimen/margin_short_8"
+                                android:layout_toRightOf="@+id/location_pointer_iv"
+                                android:layout_weight="1.5"
+
+
+                                />
+
+
+                        </LinearLayout>
+
+-->
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/username_border"
+                                android:layout_marginLeft="@dimen/margin_10"
+                                android:layout_marginTop="@dimen/margin_short_5"
+                                android:layout_marginRight="@dimen/margin_10"
+                                />
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_short_5"
+                                >
+
+                                <com.customfont.textview.FuturaMediumTextView
+                                    android:id="@+id/destTitleTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/Destination_address"
+                                    android:textColor="@color/text_colornew"
+
+                                    android:textSize="@dimen/text_size_17"
+                                    android:layout_marginTop="@dimen/margin_10"
+                                    android:paddingTop="@dimen/margin_short_6"
+                                    android:paddingBottom="@dimen/margin_short_2"
+
+                                    />
+
+
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/margin_short_8">
+
+                                <ImageView
+                                    android:id="@+id/location_pointer_tv"
+                                    android:layout_width="@dimen/margin_25"
+                                    android:layout_height="@dimen/margin_25"
+                                    android:src="@drawable/ic_place_red24pxs"
+                                    android:layout_marginTop="@dimen/margin_short_5"
+
+                                    />
+                                <com.customfont.textview.FuturaBkTextView
+                                    android:id="@+id/destAddressTV"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/text_colornew"
+                                    android:textSize="@dimen/text_size_14"
+                                    android:paddingRight="@dimen/margin_10"
+                                    android:paddingTop="@dimen/margin_short_6"
+                                    android:paddingBottom="@dimen/margin_short_6"
+                                    android:paddingLeft="@dimen/margin_10"
+                                    android:minLines="2"
+                                    android:maxLines="5"
+                                    android:layout_toRightOf="@+id/location_pointer_tv"
+                                    />
+
+                            </RelativeLayout>
+
+
+
+
+                          <!--  <LinearLayout
+                                android:id="@+id/destAddLay1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginLeft="@dimen/view_height_36"
+                                android:layout_marginRight="@dimen/margin_15"
+                               android:visibility="gone"
+
+                                >-->
+
+
+                                <com.customfont.textview.FuturaBkTextView
+                                    android:id="@+id/destDropDateTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/loc_pink"
+                                    android:textSize="@dimen/text_size_14"
+                                    android:text="@string/dropoff_date"
+                                    android:textAllCaps="false"
+                                    android:gravity="left"
+                                    android:paddingRight="@dimen/margin_10"
+                                    android:paddingTop="@dimen/margin_short_5"
+                                    android:paddingBottom="@dimen/margin_short_5"
+                                    android:paddingLeft="@dimen/margin_short_8"
+                                    android:background="@drawable/loc_pink_drawable"
+
+                                    android:layout_marginLeft="@dimen/view_height_36"
+                                    android:layout_marginRight="@dimen/margin_15"
+                                    android:visibility="gone"
+
+                                    />
+
+                             <!--     <com.customfont.textview.FuturaBkTextView
+                                     android:id="@+id/destResNumTV"
+                                     android:layout_width="match_parent"
+                                     android:layout_height="wrap_content"
+                                     android:textColor="@color/loc_nevy_blue"
+                                     android:textSize="@dimen/text_size_14"
+                                     android:text="@string/res_no"
+                                     android:textAllCaps="false"
+                                     android:gravity="left"
+                                     android:paddingRight="@dimen/margin_10"
+                                     android:paddingTop="@dimen/margin_short_5"
+                                     android:paddingBottom="@dimen/margin_short_5"
+                                     android:paddingLeft="@dimen/margin_short_8"
+                                     android:background="@drawable/loc_blue_drawable"
+                                     android:layout_weight="2"
+                                     />
+
+
+
+                        </LinearLayout>-->
+ -->
+
+
+                          <!--  <LinearLayout
+                                android:id="@+id/destAddLay2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="@dimen/margin_short_8"
+                                android:layout_marginLeft="@dimen/view_height_36"
+                                android:layout_marginRight="@dimen/margin_15"
+                                android:visibility="gone"
+
+                                >
+                                destDropTimeTV
+                                -->
+
+                                <com.customfont.textview.FuturaBkTextView
+                                    android:id="@+id/destResNumTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/loc_light_blue"
+                                    android:text="@string/res_no"
+                                    android:textSize="@dimen/text_size_14"
+                                    android:textAllCaps="false"
+                                    android:gravity="left"
+                                    android:paddingRight="@dimen/margin_10"
+                                    android:paddingTop="@dimen/margin_short_5"
+                                    android:paddingBottom="@dimen/margin_short_5"
+                                    android:paddingLeft="@dimen/margin_short_8"
+                                    android:layout_toRightOf="@+id/location_pointer_iv"
+                                    android:background="@drawable/loc_light_blue_drwable"
+                                    android:visibility="gone"
+
+                                    android:layout_marginTop="@dimen/margin_short_8"
+                                    android:layout_marginLeft="@dimen/view_height_36"
+                                    android:layout_marginRight="@dimen/margin_15"
+
+
+                                    />
+
+
+                             <!--   <com.customfont.textview.FuturaBkTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/text_size_14"
+                                    android:paddingRight="@dimen/margin_10"
+                                    android:paddingBottom="@dimen/margin_short_6"
+                                    android:layout_marginTop="@dimen/margin_short_8"
+                                    android:paddingLeft="@dimen/margin_short_8"
+                                    android:layout_toRightOf="@+id/location_pointer_iv"
+                                    android:layout_weight="2"
+
+
+                                    />
+
+
+                            </LinearLayout>-->
+
+
+
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                </com.tracking.constants.ZoomView>
+
+                <com.customfont.button.FuturaMediumButton
+                    android:id="@+id/btnDriverJob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/view_height_55"
+                    android:text="@string/arrived_at_pickup_loc"
+                    android:textSize="@dimen/text_size_20"
+                    android:layout_marginLeft="@dimen/margin_15"
+                    android:layout_marginRight="@dimen/margin_15"
+                    android:layout_marginBottom="@dimen/margin_15"
+                    android:textColor="@color/white"
+                    android:background="@drawable/assign_redbtn"
+                    android:layout_gravity="center"
+                    android:paddingLeft="@dimen/margin_25"
+                    android:paddingRight="@dimen/margin_25"
+                    android:layout_marginTop="@dimen/view_height_40"
+                    android:textAllCaps="false"
+
+
+                    />
+
+
+
+                <com.customfont.button.FuturaMediumButton
+                    android:id="@+id/btnCancelJob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/view_height_55"
+                    android:text="@string/cancel"
+                    android:textSize="@dimen/text_size_20"
+                    android:layout_marginLeft="@dimen/margin_15"
+                    android:layout_marginRight="@dimen/margin_15"
+                    android:layout_marginBottom="@dimen/margin_29"
+                    android:textColor="@color/white"
+                    android:background="@drawable/assign_redbtn"
+
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_short_9"
+                    android:textAllCaps="true"
+                    android:layout_gravity="center"
+                    android:paddingLeft="@dimen/margin_25"
+                    android:paddingRight="@dimen/margin_25"
+                    android:visibility="gone"
+                    android:layout_below="@+id/btnDriverJob"
+
+                    />
+
+
+            </LinearLayout>
+
+
+    </ScrollView>
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

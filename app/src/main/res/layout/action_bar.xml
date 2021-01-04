@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/homeActionbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_height_50"
+        android:layout_alignParentTop="true"
+        android:background="@color/white">
+
+
+
+        <com.customfont.textview.MontserraBoldTextView
+            android:id="@+id/actionBarTitleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/containers"
+            android:textStyle="bold"
+            android:textColor="@color/text_new_heading"
+            android:textSize="@dimen/text_size_18" />
+
+
+        <RelativeLayout
+            android:id="@+id/searchActionBar"
+            android:layout_width="@dimen/view_height_50"
+            android:layout_height="@dimen/view_height_50"
+            android:layout_toLeftOf="@+id/notificationLay">
+
+            <ImageView
+                android:id="@+id/searchImgBtn"
+                android:layout_width="@dimen/margin_28"
+                android:layout_height="@dimen/margin_28"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icons_searches"
+
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/notificationLay"
+            android:layout_width="@dimen/view_height_50"
+            android:layout_height="@dimen/view_height_50"
+            android:layout_alignParentRight="true"
+
+            >
+
+
+            <ImageView
+                android:id="@+id/importExportImgVw"
+                android:layout_width="@dimen/view_height_25"
+                android:layout_height="@dimen/view_height_25"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_notifications"
+
+                />
+
+            <TextView
+                android:id="@+id/counterTextView"
+                android:layout_width="@dimen/margin_short_7"
+                android:layout_height="@dimen/margin_short_7"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_13"
+                android:layout_marginTop="@dimen/margin_14"
+                android:background="@drawable/red_circle"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_12"
+                android:visibility="gone"
+
+                />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/menuActionBar"
+            android:layout_width="@dimen/view_height_45"
+            android:layout_height="@dimen/view_height_50"
+            android:layout_alignParentLeft="true"
+
+            >
+
+            <ImageView
+                android:id="@+id/menuImgBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/margin_12"
+                android:src="@drawable/icn_menu_dark"
+
+                />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/searchBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_height_50"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:paddingRight="@dimen/margin_10"
+        android:animateLayoutChanges="true"
+        android:visibility="gone"
+
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/backActionBar"
+            android:layout_width="@dimen/view_height_50"
+            android:layout_height="@dimen/view_height_50"
+            android:layout_alignParentLeft="true"
+            android:padding="@dimen/margin_12"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_arrow_backbb"
+                />
+        </RelativeLayout>
+
+
+        <com.customfont.edittext.FuturaMediumEditText
+            android:id="@+id/searchEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_16"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray_text_transparent"
+            android:layout_toRightOf="@+id/backActionBar"
+            android:paddingLeft="@dimen/margin_short_6"
+            android:paddingRight="@dimen/margin_29"
+            android:hint="@string/Container_Number"
+            android:layout_centerVertical="true"
+            android:paddingTop="@dimen/margin_short_5"
+            android:singleLine="true"
+            android:textAllCaps="true"
+            android:textCursorDrawable="@color/black"
+            android:theme="@style/Theme.App.Search"
+            android:imeOptions="actionSearch"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="@dimen/margin_short_5"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_short_5"
+            >
+
+            <ImageView
+                android:id="@+id/clearTextBtn"
+                android:layout_width="@dimen/margin_16"
+                android:layout_height="@dimen/margin_16"
+                android:src="@drawable/cancel"
+                android:visibility="gone"
+                />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

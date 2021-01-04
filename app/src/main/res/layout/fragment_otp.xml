@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+       >
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            >
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+    <TextView
+        android:id="@+id/emailId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        />
+
+</RelativeLayout>
+
+            <com.customfont.edittext.MoskMediumEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editOTp"
+                android:hint="Enter OTP Here"
+                android:textSize="@dimen/view_height_25"
+                android:gravity="center"
+                android:padding="20dp"
+                android:inputType="phone"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <com.customfont.button.FuturaMediumButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Submit_Otp"
+            android:id="@+id/btnSendOtp"
+            android:padding="20dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#fff"
+            android:layout_below="@+id/textName"/>
+
+        <com.customfont.button.FuturaMediumButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Back_Login"
+            android:id="@+id/btnBackLogin"
+            android:padding="20dp"
+            android:layout_marginTop="@dimen/margin_15"
+            android:background="@color/colorPrimary"
+            android:textColor="#fff"
+            android:layout_below="@+id/btnSendOtp"/>
+
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progressBarOTP"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

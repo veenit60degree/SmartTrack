@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="@dimen/view_height_300"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:id="@+id/shareFileLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            >
+
+            <com.customfont.textview.FuturaBkTextView
+                android:id="@+id/jobtitleview"
+                android:layout_width="match_parent"
+                android:text="@string/select_job_type"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_13"
+                android:textAlignment="center"
+                android:padding="@dimen/margin_short_5"
+                />
+
+
+
+
+            <TextView
+                android:id="@+id/jobView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+
+                />
+
+            <com.customfont.button.CalibriBoldButton
+                android:id="@+id/liveLoadingBtn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:textColor="@color/popup_text"
+                android:text="@string/LiveLoading"
+                android:textAllCaps="false"
+                android:textSize="@dimen/text_size_16"
+                />
+            <TextView
+                android:id="@+id/liveLoadingView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white_border"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                />
+
+
+            <com.customfont.button.CalibriBoldButton
+                android:id="@+id/leftWithChassisBtn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:textColor="@color/popup_text"
+                android:text="@string/left_with_chassis"
+                android:textAllCaps="false"
+                android:textSize="@dimen/text_size_16"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white_border"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                />
+            <com.customfont.button.CalibriBoldButton
+                android:id="@+id/leftWithOutChassisBtn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:textColor="@color/popup_text"
+                android:text="@string/left_without_chassis"
+                android:textAllCaps="false"
+                android:textSize="@dimen/text_size_16"
+                />
+
+
+            <View
+                android:id="@+id/deadCallView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white_border"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+
+                />
+
+
+            <com.customfont.button.CalibriBoldButton
+                android:id="@+id/deadCallBtn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:textColor="@color/popup_text"
+                android:text="@string/dead_call"
+                android:textAllCaps="false"
+                android:textSize="@dimen/text_size_16"
+                android:visibility="gone"
+                />
+
+
+            <View
+                android:id="@+id/orderCancelView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white_border"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:visibility="gone"
+                />
+            <com.customfont.button.CalibriBoldButton
+                android:id="@+id/orderCancelBtn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:textColor="@color/popup_text"
+                android:text="@string/order_cancel"
+                android:textAllCaps="false"
+                android:textSize="@dimen/text_size_16"
+                android:visibility="gone"
+                />
+
+
+            <View
+                android:id="@+id/orderCancelView2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white_border"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:visibility="gone"
+                />
+
+
+            <com.customfont.button.CalibriBoldButton
+                android:id="@+id/closeSBtn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="@string/cancel"
+                android:background="@color/white"
+                android:textColor="@color/popup_text"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textSize="@dimen/text_size_17"
+                />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    
+    
+    
+</RelativeLayout>
+

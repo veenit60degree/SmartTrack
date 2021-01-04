@@ -1,0 +1,286 @@
+<resources>
+    <string name="app_name">ALS Containers</string>
+
+    <string name="email">Email</string>
+    <string name="userame">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+
+    <string name="assign">Assign</string>
+    <string name="Picked_up">Picked Up</string>
+    <string name="done">Done</string>
+    <string name="arrived">Arrived</string>
+    <string name="delivered">Delivered</string>
+    <string name="ok">Ok</string>
+    <string name="na"></string>
+    <string name="Home">Home</string>
+    <string name="my_jobs">My Jobs</string>
+    <string name="action_settings">Settings</string>
+    <string name="selct_truck_today">Select Truck For Today</string>
+
+
+    <string name="arrived_at_pickup_loc">Arrived At Pickup Location</string>
+    <string name="pickup_loc">Pickup Location</string>
+    <string name="Depart">Depart</string>
+    <string name="get_next_loc">Get Next Location</string>
+    <string name="next_loc">Next Location</string>
+    <string name="next_loc_desc">Your next location is</string>
+    <string name="container_pickup">Container Pickup</string>
+    <string name="containers">Containers</string>
+    <string name="container_details">Container Details</string>
+    <string name="address_pickup">Address, where container has to be pick up.</string>
+    <string name="no_record_found">No record found</string>
+    <string name="job_rejected">Job has been Rejected by you</string>
+    <string name="search">Search</string>
+    <string name="type">Type</string>
+    <string name="no_loc_available">  Next location not avaiable.</string>
+    <string name="want_to_Upload_Del_Doc">Do you want to upload Delivery Document</string>
+    <string name="selct_doc_type">Select Document Type</string>
+    <string name="picup_doc">Pickup Doc</string>
+    <string name="pod_doc">POD Doc</string>
+    <string name="po_number">PO Number</string>
+    <string name="local">Local</string>
+    <string name="production">Production</string>
+    <string name="error_msg">Error! Please try again</string>
+    <string name="insp_req">Inspection Required</string>
+    <string name="res_detail_missing">Reservation details missing</string>
+    <string name="complete_job_desc">You can\'t use this container, Complete your current job first</string>
+
+    <string name="yours_jobs">Yours Jobs</string>
+    <string name="back_to_yard">Back To Yard</string>
+
+    <string name="pickup_date">Pickup Date: </string>
+    <string name="pickup_time">Pickup Time: </string>
+    <string name="dropoff_date">Dropoff Date: </string>
+    <string name="dropoff_time">Dropoff Time: </string>
+    <string name="res_no">Res No: </string>
+    <string name="origin">Origin</string>
+    <string name="desc">Dest</string>
+    <string name="update">Update</string>
+    <string name="new_version_available">New Version Available</string>
+
+    <string name="assign_contnr_btn">Assign</string>
+    <string name="Size">Size/Type</string>
+    <string name="chassies_eNo">Chassis No</string>
+    <string name="Gross_Weight">Gross Weight</string>
+    <string name="Truck_eNo">Truck No</string>
+    <string name="self_assign_location">  Do you want to assign next location by your self ? </string>
+
+    <string name="no_loc">No Location !</string>
+    <string name="seal_no">Seal Number</string>
+    <string name="gross_weight">Gross Weight</string>
+    <string name="purchase_order">Purchase Order</string>
+    <string name="Enter_Remarks">Enter Remarks</string>
+    <string name="Text_Msg">Driver Notes...</string>
+
+    <string name="ref_no">Ref No: </string>
+    <string name="booking_no">Booking No</string>
+    <string name="Shipping_Line">Shipping Line</string>
+    <string name="bill_to">Bill To </string>
+    <string name="name">Name: </string>
+    <string name="Email_detail">Email: </string>
+    <string name="Origin_address">Origin Address</string>
+    <string name="Destination_address">Destination Address</string>
+    <string name="Container_info">Res Date &amp;Time</string>
+    <string name="Origin_add_short">Origin Add</string>
+    <string name="Dest_add_short">Dest. Add</string>
+    <string name="address">Address</string>
+    <string name="chessisNO">Chassis No</string>
+
+
+    <string name="sign_in">Sign in</string>
+    <string name="ForgotPassword">Forgot Password?</string>
+    <string name="Poweredby">Powered by Arethos</string>
+
+    <string name="date_time">Date Time </string>
+    <string name="date_and_time">Date &amp; Time </string>
+    <string name="load_type">Load Type </string>
+    <string name="appointment">Appointment </string>
+    <string name="reservation_no">Res No </string>
+    <string name="Contact"></string>
+    <string name="Truck_No">Truck No. </string>
+    <string name="Truck_Number">Truck Number:</string>
+    <string name="Chassis_No">Chassis No. </string>
+    <string name="Container_No">Container No. </string>
+    <string name="Container_type">Container Type </string>
+    <string name="Container_Number">Container Number</string>
+    <string name="cont_number_format">ABCD1234567</string>
+    <string name="tare_Weight">Tare Weight</string>
+    <string name="Pick_Up">Pick Up</string>
+    <string name="returns">Return</string>
+    <string name="job_type">Job Type</string>
+    <string name="select_job_type">Select Job Type</string>
+    <string name="select_truck">Select Truck</string>
+    <string name="select_chesis">Select Chassis</string>
+    <string name="Remark">Remarks</string>
+    <string name="Container_Type_Size">Container Type/Size </string>
+
+    <string name="res_number">Res. Number: </string>
+    <string name="res_date">Res. Date: </string>
+    <string name="res_time">Res. Time: </string>
+    <string name="job_completed">Your job has been completed !</string>
+    <string name="ready_for_work">Ready For Work</string>
+
+    <string name="truck_has_updated">TRUCK WILL BE UPDATED</string>
+    <string name="success">Success</string>
+    <string name="Submit_Otp">Submit</string>
+    <string name="Back_Login">Back to Login</string>
+
+    <string name="login_desc">ALS containers is an ideal solution for Import and Export containers.</string>
+    <string name="App_Version">Version: </string>
+
+    <string name="Loding">Loading</string>
+    <string name="Dropoff">Dropoff</string>
+    <string name="Yard">Yard</string>
+    <string name="Yard_address">Yard Address:</string>
+
+    <string name="Message_details">Notes</string>
+    <string name="confirm_details">Confirm Details</string>
+    <string name="Chassis_Num">Chassis Number</string>
+    <string name="Container_Num">Container Number</string>
+
+    <string name="LiveLoading">Live Loading</string>
+    <string name="left_with_chassis">Left Container With Chassis</string>
+    <string name="left_without_chassis">Left Container Without Chassis</string>
+    <string name="dead_call">Dead Call</string>
+    <string name="order_cancel">Order Cancel</string>
+
+    <string name="LoadingWithoutDriver">Loading Without Driver</string>
+    <string name="LoadingWithoutDriverTruck">Loading Without Driver Truck</string>
+    <string name="LoadingWithoutDriverTruckChessie">Loading Without Driver Truck Chessie</string>
+    <string name="PartialLoaded">Partial Loaded</string>
+    <string name="empty">Empty</string>
+    <string name="Loaded">Loaded</string>
+    <string name="ArrivedAtPickeUpLoc">Arrived At PickeUp Location</string>
+    <string name="ArrivedAtWareHouse">Arrived At Ware House</string>
+    <string name="cancel">Cancel</string>
+    <string name="Required">Required</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="logout">Logout</string>
+
+    <string name="err_msg_name">Enter username</string>
+    <string name="err_valid_email">Email not valid</string>
+    <string name="err_msg_paswrd">Enter password</string>
+    <string name="UploadImage">Upload Image</string>
+
+    <string name="Confirm">Confirm!</string>
+    <string name="Do_you_want_logout">Do you really want to logout?</string>
+    <string name="loc_not_available">No Location</string>
+
+
+    <string name="temp_yard">(Yard)</string>
+    <string name="temp_loading">(Loading)</string>
+    <string name="temp_contact">9687456654</string>
+    <string name="temp_chassiesNo">3254345645</string>
+    <string name="temp_truckNo">Pb 65 d 3565</string>
+    <string name="temp_ref_no">PD3X55</string>
+
+    <string name="temp_date_1">12-02-2017</string>
+    <string name="temp_date">Date: 12-02-2017</string>
+    <string name="temp_distance">20ft</string>
+    <string name="temp_container">Container 1</string>
+    <string name="temp_serial_no">1</string>
+    <string name="temp_address">Street: 334 tennesse lane Country: USA City: Palo Alto Zip:4535698 \n Date: 25-feb-2017 02:30pm</string>
+    <string name="temp_address_orign">98 Winn St, Woburn, MA 01801, USA Zip:4535698</string>
+    <string name="temp_name">Hyundai Merchant Marine</string>
+    <string name="temp_email">John@gmail.com</string>
+    <string name="caps_OnOff">CapsLock</string>
+    <string name="caps_desc">Change the appearance of the content</string>
+
+    <string-array name="right_menu">
+        <item>Export</item>
+        <item>Import</item>
+        <item>Self Assign</item>
+        <item>Logout</item>
+    </string-array>
+    <!--<item>Profile</item>-->
+
+
+    <string name="profileName">Name</string>
+    <string name="profileEmail">Email</string>
+    <string name="profileGender">Gender</string>
+    <string name="profileDob">D.O.B.</string>
+    <string name="profileDLNo">DL No.</string>
+    <string name="profilePortPassNo">Port Pass No.</string>
+    <string name="truck_no">Truck No.</string>
+    <string name="change">Change</string>
+    <string name="change_truck">Change Truck</string>
+
+    <string name="title_activity_maps">Map</string>
+    <string name="android_local">AIzaSyAN1XwtyXr4i4LK6jM6MZojhYIef6eCTJU</string>
+    <string name="android_production">AIzaSyBPsQVPdkl5Hgxf6ycfh9x5KEUA6vrfiIc</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+</resources><!--//AIzaSyD7_ib4EY4B9hbMnSf7f_Ht3hkJ1B03CEY-->

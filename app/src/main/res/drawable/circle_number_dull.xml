@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item><layer-list>
+        <item>
+
+            <shape android:shape="oval">
+                <!-- background -->
+                <solid android:color="@color/white_hover" />
+                <!-- border -->
+                <stroke android:width="2dp" android:color="@color/transparent" />
+
+                <!-- corner roundness -->
+
+                <gradient android:startColor="@color/popup_text"
+                    android:endColor="@color/dull_light"
+                    android:angle="90">
+
+                </gradient>
+            </shape>
+        </item>
+
+    </layer-list></item>
+</selector>

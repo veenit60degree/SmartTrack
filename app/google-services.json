@@ -1,0 +1,89 @@
+{
+  "project_info": {
+    "project_number": "461625665210",
+    "firebase_url": "https://smarttrack-156207.firebaseio.com",
+    "project_id": "smarttrack-156207",
+    "storage_bucket": "smarttrack-156207.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:461625665210:android:31a2ca18c1e1f210",
+        "android_client_info": {
+          "package_name": "com.tracking.smarttrack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "461625665210-dugvmatsggb969jtvl7fvmh4ailk21gg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tracking.smarttrack",
+            "certificate_hash": "9ff8cd3ac08f2420026e8962bfbbe1968aa55b42"
+          }
+        },
+        {
+          "client_id": "461625665210-271l14j2d3fa8btmtfcout95uv38dgsa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tracking.smarttrack",
+            "certificate_hash": "3475e94407bc6acfe5d30f570fd6982515c88fb6"
+          }
+        },
+        {
+          "client_id": "461625665210-tpdqi8se6r1rgpcmgcefpooojhjsu5g7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tracking.smarttrack",
+            "certificate_hash": "72a4845b3d7388fc0fa9912b1f2657ed38aea36b"
+          }
+        },
+        {
+          "client_id": "461625665210-llo2lg806p0jdtg7io70511q084ngha3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tracking.smarttrack",
+            "certificate_hash": "ee3b190b643fde9d8d02feb4609ec25fcb91abd1"
+          }
+        },
+        {
+          "client_id": "461625665210-gc1nakf2vr7gkgeu2jjbv8ke93n341ul.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClcf4fhjE9-W_bcVJk46HOsklsQQqM8ME"
+        },
+        {
+          "current_key": "AIzaSyCNYHEddzv9CWtFAqYjC1Rzd9Ih18CCvGE"
+        },
+        {
+          "current_key": "AIzaSyBzA-mAMRJF6Xir5q3OWV8AH6vQbqo9z1E"
+        },
+        {
+          "current_key": "AIzaSyBzA-AIzaSyAg2VPyJppxw78cJuZMiag8qyPsFcj90JA"
+        }
+
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "461625665210-gc1nakf2vr7gkgeu2jjbv8ke93n341ul.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "461625665210-g49p7kufne7rbdtti638uupvqtembset.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "AS.SmartTrack"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/margin_20"
+    android:paddingRight="@dimen/margin_20"
+    >
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/voilet_border"
+        android:padding="@dimen/margin_15"
+        >
+
+
+
+        <EditText
+            android:id="@+id/sText"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_16"
+            android:textColorHint="@color/white_hover"
+            android:imeOptions="actionNext"
+
+            android:theme="@style/AppTheme.EditText"
+            android:singleLine="true"
+
+            />
+
+        <TextView
+            android:id="@+id/ConfirmTitleTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/confirm_details"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/text_size_17"
+            android:textColor="@color/black"
+            android:paddingBottom="@dimen/margin_short_8"
+            android:visibility="gone"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/sealNoInputType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.EditText"
+            android:layout_marginTop="@dimen/margin_short_5"
+            android:layout_toLeftOf="@+id/uploadMediaLay"
+            android:layout_marginLeft="@dimen/margin_short_5"
+            android:layout_marginRight="@dimen/margin_short_5"
+
+            >
+
+
+            <EditText
+                android:id="@+id/sealNoEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_16"
+                android:textColorHint="@color/white_hover"
+                android:imeOptions="actionNext"
+
+                android:theme="@style/AppTheme.EditText"
+                android:singleLine="true"
+                android:hint="@string/seal_no"
+
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/grossWeightInputType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.EditText"
+            android:layout_toLeftOf="@+id/uploadMediaLay"
+            android:layout_below="@+id/contnrNoInputType"
+            android:layout_marginLeft="@dimen/margin_short_5"
+            android:layout_marginRight="@dimen/margin_short_5"
+
+            >
+
+
+            <EditText
+                android:id="@+id/grossWeightEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_16"
+                android:textColorHint="@color/white_hover"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal"
+                android:theme="@style/AppTheme.EditText"
+                android:singleLine="true"
+                android:hint="@string/gross_weight"
+
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/POInputType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.EditText"
+            android:layout_toLeftOf="@+id/uploadMediaLay"
+            android:layout_below="@+id/contnrNoInputType"
+            android:layout_marginLeft="@dimen/margin_short_5"
+            android:layout_marginRight="@dimen/margin_short_5"
+
+            >
+
+
+            <EditText
+                android:id="@+id/POEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_16"
+                android:textColorHint="@color/white_hover"
+                android:imeOptions="actionDone"
+                android:theme="@style/AppTheme.EditText"
+                android:singleLine="true"
+                android:hint="@string/purchase_order"
+
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/ChessesInputType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.EditText"
+            android:layout_toLeftOf="@+id/uploadMediaLay"
+            android:layout_below="@+id/contnrNoInputType"
+            android:layout_marginLeft="@dimen/margin_short_5"
+            android:layout_marginRight="@dimen/margin_short_5"
+            android:visibility="gone"
+            >
+
+
+            <EditText
+                android:id="@+id/ChessesEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_16"
+                android:textColorHint="@color/white_hover"
+                android:imeOptions="actionDone"
+                android:theme="@style/AppTheme.EditText"
+                android:singleLine="true"
+                android:hint="@string/Chassis_Num"
+
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/ContrInputType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.EditText"
+            android:layout_toLeftOf="@+id/uploadMediaLay"
+            android:layout_below="@+id/contnrNoInputType"
+            android:layout_marginLeft="@dimen/margin_short_5"
+            android:layout_marginRight="@dimen/margin_short_5"
+            android:visibility="gone"
+            >
+
+
+            <EditText
+                android:id="@+id/ContrEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_16"
+                android:textColorHint="@color/white_hover"
+                android:imeOptions="actionDone"
+                android:theme="@style/AppTheme.EditText"
+                android:singleLine="true"
+                android:hint="@string/Container_Num"
+
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_height_40"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/view_height_35"
+            >
+
+
+
+            <Button
+                android:id="@+id/btnCancelLoadingJob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel"
+                android:textSize="@dimen/text_size_20"
+                android:layout_marginLeft="@dimen/margin_15"
+                android:layout_marginRight="@dimen/margin_10"
+                android:textColor="@color/white"
+                android:background="@drawable/ripple_black"
+
+
+                android:layout_weight="1"
+
+                />
+
+        <!--    android:textAllCaps="false"-->
+            <Button
+                android:id="@+id/btnLoadingJob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ok"
+                android:textSize="@dimen/text_size_20"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_15"
+                android:textColor="@color/white"
+                android:background="@drawable/ripple_black"
+
+                android:textAllCaps="false"
+                android:layout_weight="1"
+
+                />
+
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

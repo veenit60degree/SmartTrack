@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.customfont.textview.FuturaMediumTextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/spinnerTxtView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_16"
+        android:textColor="@color/colorDrawerTrans"
+        android:paddingTop="@dimen/margin_short_7"
+        android:paddingBottom="@dimen/margin_short_7"
+        android:paddingLeft="@dimen/margin_10"
+        android:paddingRight="@dimen/margin_10"
+
+        android:textAllCaps="false"
+
+    />
+
+
+
+

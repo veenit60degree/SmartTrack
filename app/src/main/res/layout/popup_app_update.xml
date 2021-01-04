@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:padding="@dimen/view_height_40"
+    >
+
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_scale_bottom_selector"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/margin_22"
+
+
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="@dimen/view_height_110"
+            android:layout_height="@dimen/view_height_110"
+            android:background="@drawable/blue_theme_circle"
+            android:layout_gravity="center_horizontal"
+
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/truck_white"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_20"
+
+                />
+        </LinearLayout>
+
+
+
+
+        <com.customfont.textview.MontserraBoldTextView
+            android:id="@+id/updateTitleTxtVw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/new_version_available"
+            android:textStyle="bold"
+            android:textColor="@color/text_new_heading"
+            android:textSize="@dimen/text_size_18"
+            android:layout_marginTop="@dimen/margin_short_8"
+            android:layout_marginRight="@dimen/margin_25"
+            android:layout_marginLeft="@dimen/margin_25"
+             android:textAllCaps="false"
+            />
+
+
+
+        <com.customfont.textview.FuturaBkTextView
+            android:id="@+id/updateDescTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_colornew"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/text_size_17"
+            android:paddingRight="@dimen/margin_15"
+            android:paddingLeft="@dimen/margin_15"
+            android:paddingTop="@dimen/margin_short_7"
+            android:paddingBottom="@dimen/margin_short_6"
+            android:textAllCaps="false"
+            android:gravity="center_horizontal"
+            android:text="A new version (3.0) of ALS Container app is available."
+
+            />
+
+
+        <com.customfont.button.CalibriBoldButton
+            android:id="@+id/appUpdateBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/update"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_21"
+            android:textAllCaps="false"
+            android:layout_marginTop="@dimen/margin_15"
+            android:background="@drawable/blue_bottom_scale_selector"
+
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainPopLay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="@dimen/view_height_300"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="@dimen/margin_20">
+
+    <RelativeLayout
+        android:id="@+id/viewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_default"
+        android:layout_marginRight="@dimen/margin_short_5"
+        android:layout_marginLeft="@dimen/margin_short_5"
+
+
+        >
+
+
+        <com.customfont.textview.FuturaMediumTextView
+            android:id="@+id/changeTitleView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/Confirm"
+            android:layout_centerHorizontal="true"
+            android:textSize="23sp"
+            android:layout_marginTop="22dp"
+            android:textColor="@color/popup_header"
+            android:textStyle="bold"
+            />
+
+
+        <com.customfont.textview.FuturaMediumTextView
+            android:id="@+id/titleDescView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/Do_you_want_logout"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="@dimen/margin_19"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/popup_subheader"
+            android:layout_below="@+id/changeTitleView"
+            />
+
+
+        <View
+            android:id="@+id/logoutLineView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white_border"
+            android:layout_marginTop="@dimen/view_height_40"
+            android:layout_below="@+id/titleDescView"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/btnLinLay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_height_45"
+            android:layout_below="@+id/logoutLineView"
+            android:orientation="horizontal"
+
+            >
+
+
+            <RelativeLayout
+                android:id="@+id/cancelPopupBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+
+                android:layout_weight="1"
+                >
+                <!-- android:background="@drawable/edtittext_border"-->
+                <com.customfont.button.CalibriBoldButton
+                    android:id="@+id/cancelPopupButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/cancel"
+                    android:textStyle="bold"
+                    android:textColor="@color/popup_text"
+                    android:textAllCaps="true"
+                    android:textSize="15sp"
+                    android:background="@color/white"
+
+                    />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin_short_5"
+                android:layout_marginBottom="@dimen/margin_short_5"
+                android:background="@color/divider"
+                android:layout_gravity="center"/>
+
+            <RelativeLayout
+                android:id="@+id/confirmPopupBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+
+
+                android:layout_weight="1"
+
+                >
+
+
+                <!-- android:background="@drawable/edtittext_border"-->
+                <com.customfont.button.CalibriBoldButton
+                    android:id="@+id/confirmPopupButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/logout"
+                    android:textStyle="bold"
+                    android:textColor="@color/popup_text"
+                    android:textAllCaps="true"
+                    android:textSize="15dp"
+                    android:background="@color/white"
+
+                    />
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

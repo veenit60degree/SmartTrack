@@ -1,0 +1,144 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/text_forgot</item>
+        <item name="android:textAllCaps">true</item>
+
+    </style>
+    <style name="AppTheme2" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/text_forgot</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!--<item name="android:background">@drawable/gradient_spinner</item>-->
+    <style name="spinner_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">@dimen/margin_short_5</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:popupBackground">#ffffff</item>
+    </style>
+
+
+
+
+
+    <style name="Theme.App.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">@color/black_semi_dark</item>
+        <item name="colorControlActivated">@color/black</item>
+        <item name="colorControlHighlight">@color/black</item>
+        <item name="editTextColor">@color/black</item>
+        <item name="android:textColorHint">@color/black_semi_dark</item>
+        <item name="colorAccent">@color/black</item>
+        <item name="android:paddingBottom">@dimen/margin_short_6</item>
+        <item name="android:paddingLeft">@dimen/margin_short_6</item>
+        <item name="android:paddingRight">@dimen/margin_short_6</item>
+
+
+    </style>
+
+
+<!--
+    <style name="Theme.App.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">@color/white_transparent_field</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="colorControlHighlight">@color/white</item>
+        <item name="editTextColor">@color/white</item>
+        <item name="android:textColorHint">@color/white_transparent_field</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="android:paddingBottom">@dimen/margin_14</item>
+        <item name="android:paddingLeft">@dimen/margin_short_5</item>
+        <item name="android:paddingRight">@dimen/margin_short_5</item>
+
+
+    </style>-->
+
+
+
+    <style name="AppTheme.EditText" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">@color/colorPrimaryTransparent</item>
+        <item name="colorControlActivated">@color/colorPrimaryTransparent</item>
+        <item name="colorControlHighlight">@color/colorPrimaryTransparent</item>
+        <item name="editTextColor">@color/black</item>
+        <item name="android:textColorHint">@color/colorPrimaryTransparent</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="android:paddingBottom">@dimen/margin_short_7</item>
+     
+
+    </style>
+
+
+
+
+    <style name="Theme.App.Search" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">@color/gray_text_transparent</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="colorControlHighlight">@color/white</item>
+        <item name="editTextColor">@color/white</item>
+        <item name="android:textColorHint">@color/gray_text_transparent</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="android:paddingBottom">@dimen/margin_14</item>
+        <item name="android:paddingTop">@dimen/margin_10</item>
+
+    </style>
+
+
+<!--    <style name="RobotoCondensedRegularBtn" parent="@android:style/Widget.Button">
+        <item name="com.tracking.smarttrack:font">fonts/RobotoCondensed-Bold.ttf</item>
+    </style>-->
+
+
+
+    <style name="Theme.Transparent" parent="android:Theme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+
+
+
+    <!--Error label text style-->
+    <style name="MyErrorText" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/red_text_color</item>
+    </style>
+
+    <!--Input field style-->
+    <style name="MyEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/red_text_color</item>
+    </style>
+
+    <style
+        name="TextAppearence.App.TextInputLayout" parent="@android:style/TextAppearance">
+    <item name="android:textColor">@color/app_color</item>
+
+    </style>
+
+
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!--buttons color-->
+        <item name="colorAccent">@color/black</item>
+        <!--title and message color-->
+        <item name="android:textColorPrimary">@color/black</item>
+        <!--dialog background-->
+        <item name="android:windowBackground">@drawable/dialog_drawable</item>
+    </style>
+
+
+
+
+</resources>

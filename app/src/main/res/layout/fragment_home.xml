@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/new_bgbig"
+    android:id="@+id/homeParentLayout">
+
+    <include
+        android:id="@+id/ActionbarInclude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/action_bar"
+        />
+
+<Button
+    android:id="@+id/hiddenBtn"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:visibility="gone"
+    />
+
+
+    <LinearLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_height_45"
+        android:layout_margin="@dimen/margin_10"
+        android:orientation="horizontal"
+        android:background="@drawable/voilet_border"
+        android:padding="@dimen/margin_short_1"
+        android:layout_below="@+id/ActionbarInclude"
+        android:visibility="gone"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/jobAssignBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:background="@drawable/voilet_left"
+            >
+
+            <TextView
+                android:id="@+id/newJobTextView"
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:background="@color/black"
+                android:layout_alignParentRight="true"
+
+                />
+
+
+            <TextView
+                android:id="@+id/newJobText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/assign"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_17"
+                android:layout_centerInParent="true"
+                />
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            />
+
+
+        <RelativeLayout
+            android:id="@+id/jobPickBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@color/white"
+            android:layout_weight="1"
+            >
+
+
+            <TextView
+                android:id="@+id/pickedupJobText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Picked_up"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_17"
+                android:layout_centerInParent="true"
+                />
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            />
+
+
+        <RelativeLayout
+            android:id="@+id/jobDoneBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:background="@drawable/white_right"
+            >
+
+
+            <TextView
+                android:id="@+id/doneJobTextView"
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_alignParentLeft="true"
+                android:visibility="gone"
+                />
+
+
+
+            <TextView
+                android:id="@+id/doneJobText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/delivered"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_17"
+                android:layout_centerInParent="true"
+                />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/exportSwipeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ActionbarInclude"
+
+        >
+
+    <ListView
+        android:id="@+id/exportListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:dividerHeight="@dimen/margin_20"
+        android:divider="@color/transparent"
+        android:nestedScrollingEnabled="true"
+        android:paddingTop="@dimen/margin_20"
+        android:paddingBottom="@dimen/margin_20"
+        android:scrollingCache="false"
+        android:animationCache="false"
+        android:smoothScrollbar="true"
+        />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <ListView
+        android:id="@+id/importListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ActionbarInclude"
+        android:dividerHeight="@dimen/margin_20"
+        android:divider="@color/transparent"
+        android:nestedScrollingEnabled="true"
+        android:paddingTop="@dimen/margin_20"
+        android:paddingBottom="@dimen/margin_20"
+        android:scrollingCache="false"
+        android:animationCache="false"
+        android:smoothScrollbar="true"
+
+        />
+
+    <ListView
+        android:id="@+id/unasignListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ActionbarInclude"
+        android:dividerHeight="@dimen/margin_20"
+        android:divider="@color/transparent"
+        android:nestedScrollingEnabled="true"
+        android:scrollingCache="false"
+        android:animationCache="false"
+        android:smoothScrollbar="true"
+        android:paddingTop="@dimen/margin_20"
+        android:paddingBottom="@dimen/margin_20"
+        />
+
+
+    <com.customfont.textview.FuturaBkTextView
+        android:id="@+id/noTripTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_record_found"
+        android:textColor="@color/gray_text_transparent"
+        android:textSize="@dimen/text_size_22"
+        android:layout_centerInParent="true"
+
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBarHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/noTripTextView"
+        android:layout_centerInParent="true"
+        style="?android:attr/progressBarStyle"
+        android:visibility="gone"
+        />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/selfAssignflotbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/self_assign"
+        app:srcCompat="@drawable/selfassingicon"
+        />
+</RelativeLayout>

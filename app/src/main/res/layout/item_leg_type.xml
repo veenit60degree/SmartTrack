@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="false"
+
+    >
+
+
+    <com.gigamole.library.ShadowLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/view_height_55"
+        android:paddingRight="@dimen/view_height_55"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        app:sl_shadow_angle="45"
+        app:sl_shadow_color="#8099a3e8"
+        app:sl_shadow_distance="3dp"
+        app:sl_shadow_radius="5dp"
+        android:focusable="false"
+
+
+        >
+    <com.customfont.textview.FuturaBkTextView
+        android:id="@+id/legTypeTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:textColor="@color/popup_text"
+        android:paddingTop="@dimen/margin_short_9"
+        android:gravity="center"
+        android:paddingBottom="@dimen/margin_short_9"
+        android:background="@drawable/user_name"
+        android:focusable="false"
+        />
+
+    </com.gigamole.library.ShadowLayout>
+
+
+
+</LinearLayout>

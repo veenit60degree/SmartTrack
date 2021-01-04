@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--
+    Transparent Color code - High
+    100% — FF
+    95% — F2
+    90% — E6
+    85% — D9
+    80% — CC
+    75% — BF
+    70% — B3
+    65% — A6
+    60% — 99
+    55% — 8C
+    50% — 80
+    45% — 73
+    40% — 66
+    35% — 59
+    30% — 4D
+    25% — 40
+    20% — 33
+    15% — 26
+    10% — 1A
+    5% — 0D
+    0% — 00
+
+    Low -->
+
+    <color name="gray_hover_trans">#80a8a8a8</color>
+    <color name="colorPrimary">#494A59</color>
+    <color name="colorPrimaryDark">#6CACDE</color>
+    <color name="colorAccent">#494A59</color>
+
+    <color name="colorDrawer">#284C7B</color>
+    <color name="colorDrawerTrans">#CC284C7B</color>
+    <color name="white_trans">#CCFFFFFF</color>
+    <color name="black_disabled">#C6CED4</color>
+    <color name="disabled">#667C7C7B</color>
+    <color name="disabled_text">#99A8B0</color>
+    <color name="disabled_white">#FDFDFE</color>
+    <color name="spinner_blue">#9BA4B7</color>
+    <color name="spinner_divider">#E8EBEC</color>
+
+
+    <color name="colorPrimaryTransparent">#99494A59</color>
+    <color name="app_colorPrimaryy">#2E2E2E</color>             <!--2C2A37-->
+    <color name="app_colorPrimaryDark">#000000</color>    <!--23212B-->
+    <color name="black_semi_dark">#8C000000</color>
+    <color name="white_semi_dark">#8CFFFFFF</color>
+
+    <color name="camera_transparent">#30C0C0C0</color>
+    <color name="black_transparent">#30000000</color>
+    <color name="black_transparent_thirty">#B3000000</color>
+    <color name="black_transparent_fifty">#B3000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="white_transparent">#80FFFFFF</color>
+    <color name="white_transparent_field">#99FFFFFF</color>
+
+    <color name="dark_blue_layout">#5A63A3</color>
+    <color name="blue_text_color">#2F5898</color>
+    <color name="red_text_color">#F47365</color>  <!--F67265-->
+    <color name="light_blue_layout">#C6CCF1</color>
+    <color name="btn_color">#496238</color>
+    <color name="app_color">#8CA080</color>   <!--2c2741-->
+    <color name="white">#ffffff</color>
+    <color name="white_hover">#F0F0F0</color>
+    <color name="hint_color">#c5c5c5</color>
+    <color name="gray_tab_color">#99E8E8E8</color>
+    <color name="gray_tab_dark_color">#999698A5</color>
+    <color name="dialog_bg">#00968C</color>green mist
+    <color name="green_mist">#8BA870</color>
+    <color name="lightcoral_red">#C67171</color>
+    <color name="ribbon_red_start">#F31C3F</color>
+    <color name="ribbon_red_end">#F38D9E</color>
+
+
+    <color name="slide_list_divider">#849778</color>
+    <color name="black">#000000</color>
+    <!--<color name="blue_text_color">#4B559A</color>-->
+    <color name="gray_text">#a8a8a8</color>
+    <color name="gray_text_transparent">#99a8a8a8</color>
+    <color name="gray_text1">#555555</color>
+    <color name="blue">#22ACE4</color>
+    <color name="graylayout">#BFBEC3</color>
+
+
+    <color name="detail_text_dark">#000000</color>
+    <color name="detail_text_light">#ffffff</color>
+    <color name="detail_text_gray_light">#959595</color>
+    <color name="detail_text_gray">#636363</color>
+
+    <color name="blue_text">#5EA3E9</color>
+    <color name="green_bg">#01A204</color>
+    <color name="green_hover">#7ddc1f</color>
+    <color name="red_bg">#FF0000</color>
+    <color name="red_text">#cc0000</color>
+    <color name="red_hover">#ff1919</color>
+    <color name="voilet_bg">#000000</color>   <!--2B2740-->
+    <color name="actionbar_bg">#000000</color>    <!--2E2E2E-->
+    <color name="splash_color">#5E6174</color>
+
+    <color name="greyText">#565656</color>
+    <color name="grey_line_list">#CAC8CD</color>
+
+    <color name="violet">#82387F</color>
+    <color name="red_custom">#F44236</color>
+    <color name="white_foreground">#F1EFEF</color>
+
+    <color name="white_dark">#F6F2F2</color>
+    <color name="white_dark_hover">#E3D9D9</color>
+
+    <color name="gray_border">#CBCBCB</color>
+    <color name="splash_gray">#C3BFCE</color>
+    <color name="white_cream_hover">#E0CBCB</color>
+
+
+    <color name="black_hover">#2E2E2E</color>
+    <color name="grey_light_line">#ADCAD9</color>
+    <color name="grey_text">#736767</color>
+    <color name="blue_light_line">#96B8C9</color>
+    <color name="blue_light_line_trip_detail">#D4E6EF</color>
+
+
+    <color name="blue_background_layout">#A2C8E2</color>
+    <color name="car_detail_layout">#B7D5EA</color>
+    <color name="blue_background">#c3dcee</color>
+    <color name="blue_transparent_background">#00284d</color>
+    <color name="blue_button">#256CB4</color>
+    <color name="blue_button_hover">#287CD1</color>
+    <color name="light_blue_button_hover">#89B3C8</color>
+    <color name="green">#4FB847</color>
+
+    <color name="green_transparent_background">#994FB847</color>
+    <color name="text_forgot">#3F88C5</color>
+    <color name="slider_background">#075182</color>
+    <color name="fb_default">#315C94</color>
+    <color name="fb_hover">#2B4E7B</color>
+    <color name="fb_line">#2C5283</color>
+    <color name="blue_transparent">#E6075182</color>
+
+    <color name="divider_light_blue_line">#9BB7CC</color>
+    <color name="divider_light_grey_line">#F8F9F9</color>
+
+    <color name="username_border">#F0F3F4</color>
+    <color name="dull_light">#BACEDD</color>
+    <color name="dull_dark">#8FA8C3</color>
+
+    <color name="loc_pink">#F5325C</color>
+    <color name="loc_nevy_blue">#1761FD</color>
+    <color name="loc_light_blue">#12A4ED</color>
+    <color name="loc_light_blue2">#B312A4ED</color>
+
+
+    <color name="loc_pink_trans">#33F5325C</color>
+    <color name="loc_navy_blue_trans">#331761FD</color>
+    <color name="loc_light_blue_trans">#3312A4ED</color>
+
+    <color name="ready_done">#03D87F</color>
+    <color name="singin_end">#6CACDE</color>
+    <color name="text_shadow">#7FC7D0F8</color>
+    <color name="text_shadow_white">#FFFFFF</color>
+    <color name="text_new_heading">#1A3561</color>
+    <color name="loc_ribbon_start">#F31C3F</color>
+    <color name="loc_ribbon_end">#F38D9E</color>
+    <color name="divider">#C3CBCE</color>
+    <color name="self_assign">#6AA9DB</color>
+    <color name="white_border">#F0F3F4</color>
+    <color name="text_colornew">#334856</color>
+    <color name="popup_text">#78849E</color>
+    <color name="popup_header">#21416E</color>
+    <color name="popup_subheader">#4C5E6A</color>
+
+</resources>

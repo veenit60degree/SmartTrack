@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/new_bgbig"
+
+    >
+
+
+    <include
+        android:id="@+id/ActionbarDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/action_bar"
+        />
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_15"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_15"
+        app:cardCornerRadius="@dimen/margin_10"
+
+        >
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/margin_short_8"
+                android:paddingBottom="@dimen/margin_short_8"
+                android:paddingLeft="@dimen/margin_13"
+                android:paddingRight="@dimen/margin_13"
+                >
+
+
+
+                <com.customfont.textview.FuturaMediumTextView
+                    android:id="@+id/truckTitleTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Truck_Number"
+                    android:textColor="@color/text_colornew"
+                    android:textSize="@dimen/text_size_17"
+                    android:textAllCaps="false"
+
+                    />
+
+
+                <com.customfont.textview.MontserraBoldTextView
+                    android:id="@+id/truckNumberTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray_text1"
+                    android:textSize="@dimen/text_size_17"
+                    android:paddingLeft="@dimen/margin_10"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/truckTitleTV"
+                    android:gravity="right"
+
+
+                    />
+
+                <!--   android:minLines="2"
+                   android:maxLines="5"
+                   -->
+            </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+    <com.customfont.textview.MontserraBoldTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Yard_address"
+        android:textColor="@color/text_colornew"
+
+        android:textSize="@dimen/text_size_21"
+        android:layout_marginTop="@dimen/margin_10"
+        android:paddingTop="@dimen/margin_short_6"
+        android:layout_marginLeft="@dimen/margin_18"
+        android:textAllCaps="false"
+        />
+
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_15"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_15"
+        android:layout_marginTop="@dimen/margin_short_7"
+        app:cardCornerRadius="@dimen/margin_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/chassiesNoTV"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:paddingLeft="@dimen/margin_short_8"
+            android:paddingRight="@dimen/margin_short_8"
+
+            >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/margin_short_3">
+
+        <ImageView
+            android:layout_width="@dimen/margin_25"
+            android:layout_height="@dimen/margin_25"
+            android:src="@drawable/ic_place_red24pxs"
+            android:layout_marginTop="@dimen/margin_short_8"
+
+            />
+
+
+        <com.customfont.textview.FuturaMediumTextView
+            android:id="@+id/destTitleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Destination_address"
+            android:textColor="@color/text_colornew"
+            android:textSize="@dimen/text_size_17"
+            android:paddingTop="@dimen/margin_short_6"
+            android:paddingBottom="@dimen/margin_short_2"
+            android:layout_marginLeft="@dimen/view_height_35"
+            />
+
+
+        <com.customfont.textview.FuturaBkTextView
+            android:id="@+id/yardAddressTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_colornew"
+            android:textSize="@dimen/text_size_14"
+            android:paddingRight="@dimen/margin_10"
+            android:paddingTop="@dimen/margin_short_6"
+            android:paddingLeft="@dimen/margin_10"
+            android:layout_marginLeft="@dimen/view_height_35"
+            android:layout_below="@+id/destTitleTV"
+
+
+            />
+
+     <!--   android:minLines="2"
+        android:maxLines="5"
+        -->
+    </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+    <com.customfont.button.FuturaMediumButton
+        android:id="@+id/btnDepartEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/view_height_55"
+        android:text="@string/Depart"
+        android:textSize="@dimen/text_size_20"
+        android:layout_marginLeft="@dimen/margin_15"
+        android:layout_marginRight="@dimen/margin_15"
+        android:layout_marginBottom="@dimen/margin_15"
+        android:textColor="@color/white"
+        android:background="@drawable/assign_redbtn"
+        android:layout_gravity="center"
+        android:paddingLeft="@dimen/view_height_50"
+        android:paddingRight="@dimen/view_height_50"
+        android:layout_marginTop="@dimen/view_height_40"
+        android:textAllCaps="false"
+
+
+        />
+
+
+</LinearLayout>

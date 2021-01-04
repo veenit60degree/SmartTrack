@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/margin_10"
+    android:paddingRight="@dimen/margin_10"
+    >
+
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_15"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_15"
+        android:layout_marginTop="@dimen/margin_15"
+        android:paddingRight="@dimen/margin_10"
+        app:cardCornerRadius="@dimen/margin_15"
+       android:layout_centerInParent="true"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/voilet_border"
+            android:paddingTop="@dimen/margin_15"
+            >
+
+
+
+            <com.customfont.textview.SourceSansProBoldTextView
+                android:id="@+id/TitleTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/selct_truck_today"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/text_size_18"
+                android:textColor="@color/colorDrawer"
+                android:paddingBottom="@dimen/margin_short_8"
+                android:paddingRight="@dimen/margin_20"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                />
+
+
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+                android:paddingRight="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_25"
+                android:layout_marginRight="@dimen/view_height_35"
+                android:layout_marginLeft="@dimen/view_height_35"
+                app:cardCornerRadius="@dimen/margin_10"
+                android:background="@drawable/cardview_border_blue"
+                >
+
+
+                <Spinner
+                    android:id="@+id/truckSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/Theme.App.Base"
+                    android:paddingTop="@dimen/margin_short_5"
+                    android:paddingBottom="@dimen/margin_short_5"
+                    android:paddingLeft="@dimen/margin_short_8"
+                    android:paddingRight="@dimen/margin_short_8"
+                    style="@style/spinner_style"
+                    app:backgroundTint="@color/white"
+
+
+                    />
+            </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_short_1"
+                android:background="@color/spinner_divider"
+                android:layout_marginTop="@dimen/view_height_45"
+
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_height_40"
+                android:orientation="horizontal"
+
+
+                >
+
+
+
+                <com.customfont.button.FuturaMediumButton
+                    android:id="@+id/btnLogout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_height_39"
+                    android:text="@string/logout"
+                    android:textSize="@dimen/text_size_17"
+                    android:textColor="@color/colorDrawerTrans"
+                    android:background="@drawable/white_cardview_left_selector"
+                    android:textAllCaps="false"
+                    android:layout_weight="1"
+
+                    />
+
+                <View
+                    android:layout_width="@dimen/margin_short_1"
+                    android:layout_height="match_parent"
+                    android:background="@color/spinner_divider"
+                    />
+
+                <com.customfont.button.FuturaMediumButton
+                    android:id="@+id/btnSaveTruck"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_height_39"
+                    android:text="@string/Submit_Otp"
+                    android:textSize="@dimen/text_size_17"
+                    android:textColor="@color/colorDrawerTrans"
+                    android:background="@drawable/white_cardview_right_selector"
+                    android:textAllCaps="false"
+                    android:layout_weight="1"
+
+                    />
+
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

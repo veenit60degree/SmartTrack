@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <com.customfont.textview.MontserraBoldTextView
+            android:id="@+id/jobTypeTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_colornew"
+
+            android:textSize="@dimen/text_size_21"
+            android:layout_marginTop="@dimen/margin_10"
+            android:paddingTop="@dimen/margin_short_6"
+            android:layout_marginLeft="@dimen/margin_18"
+            android:layout_marginBottom="@dimen/margin_short_8"
+            android:textAllCaps="false"
+            android:visibility="gone"
+            />
+
+
+
+
+        <android.support.v7.widget.CardView
+                android:id="@+id/listCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_20"
+                android:layout_marginLeft="@dimen/view_height_35"
+                app:cardCornerRadius="@dimen/margin_14"
+                app:cardElevation="@dimen/margin_short_3"
+                app:cardBackgroundColor="@color/white"
+            android:layout_below="@+id/jobTypeTxtView"
+
+                >
+
+
+                <RelativeLayout
+                    android:id="@+id/pickUpLocLay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:paddingTop="@dimen/margin_10"
+
+                    >
+
+
+
+                    <ImageView
+                        android:id="@+id/location_pointer_iv"
+                        android:layout_width="@dimen/margin_25"
+                        android:layout_height="@dimen/margin_25"
+                        android:src="@drawable/ic_place_green24px"
+                        android:layout_marginLeft="@dimen/margin_25"
+                        android:layout_below="@+id/pickup_loc_tv"
+                        android:layout_marginTop="@dimen/margin_15"
+                        />
+
+                    <ImageView
+                        android:id="@+id/location_dash"
+                        android:layout_width="@dimen/view_height_35"
+                        android:layout_height="@dimen/view_height_35"
+                        android:src="@drawable/dash_line"
+                        android:layout_marginLeft="@dimen/margin_20"
+                        android:layout_below="@+id/location_pointer_iv"
+                        />
+
+                    <ImageView
+                        android:id="@+id/location_dash2"
+                        android:layout_width="@dimen/view_height_35"
+                        android:layout_height="@dimen/view_height_36"
+                        android:src="@drawable/dash_line"
+                        android:layout_marginLeft="@dimen/margin_20"
+                        android:layout_below="@+id/location_dash"
+                        />
+
+                    <ImageView
+                        android:id="@+id/location_dash3"
+                        android:layout_width="@dimen/view_height_35"
+                        android:layout_height="@dimen/view_height_36"
+                        android:src="@drawable/dash_line"
+                        android:layout_marginLeft="@dimen/margin_20"
+                        android:layout_below="@+id/location_dash2"
+                        />
+
+
+                    <LinearLayout
+                        android:id="@+id/itemLinLay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        >
+
+
+                    <RelativeLayout
+                        android:id="@+id/originAddresslay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:layout_below="@+id/pickup_loc_tv"
+                        android:background="@color/transparent"
+                        android:layout_toRightOf="@+id/location_pointer_iv">
+
+                        <!--app:srcCompat="@drawable/ic_place_green"-->
+
+                        <com.customfont.textview.FuturaBkTextView
+                            android:id="@+id/pickup_address_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/view_height_60"
+                            android:paddingLeft="@dimen/margin_short_3"
+                            android:textColor="@color/text_colornew"
+                            android:textSize="@dimen/text_size_17"
+                            android:layout_marginTop="@dimen/margin_27"
+                            android:gravity="center_vertical"
+                            android:paddingTop="@dimen/margin_short_1"
+                            android:minLines="3"
+
+
+                            />
+
+
+
+
+
+                    </RelativeLayout>
+
+
+
+                        <com.customfont.textview.FuturaBkTextView
+                            android:id="@+id/originItemDropDateTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/loc_pink"
+                            android:textSize="@dimen/text_size_12"
+                            android:text="@string/pickup_date"
+                            android:textAllCaps="false"
+                            android:gravity="left"
+                            android:paddingTop="@dimen/margin_short_5"
+                            android:paddingBottom="@dimen/margin_short_5"
+                            android:paddingLeft="@dimen/margin_short_7"
+                            android:paddingRight="@dimen/margin_10"
+                            android:background="@drawable/loc_pink_drawable"
+                            android:singleLine="true"
+                            android:layout_below="@id/originAddresslay"
+                            android:layout_marginLeft="@dimen/view_height_60"
+                            android:layout_marginRight="@dimen/margin_short_8"
+                            android:layout_marginTop="@dimen/margin_short_6"
+                            />
+
+
+
+                        <com.customfont.textview.FuturaBkTextView
+                            android:id="@+id/originItemResNumTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/loc_light_blue"
+                            android:text="@string/res_no"
+                            android:textSize="@dimen/text_size_12"
+                            android:textAllCaps="false"
+                            android:gravity="left"
+                            android:paddingTop="@dimen/margin_short_5"
+                            android:paddingBottom="@dimen/margin_short_5"
+                            android:paddingLeft="@dimen/margin_short_7"
+                            android:paddingRight="@dimen/margin_10"
+                            android:layout_toRightOf="@+id/location_pointer_iv"
+                            android:background="@drawable/loc_light_blue_drwable"
+
+                            android:layout_below="@id/originItemDropDateTV"
+                            android:layout_marginTop="@dimen/margin_short_8"
+                            android:layout_marginLeft="@dimen/view_height_60"
+                            android:layout_marginRight="@dimen/margin_short_8"
+                            android:layout_marginBottom="@dimen/margin_15"
+
+                            />
+
+
+                    <RelativeLayout
+                        android:id="@+id/destAddresslay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:layout_marginTop="@dimen/margin_short_3"
+                        android:layout_below="@+id/originAddresslay"
+                        >
+
+                        <ImageView
+                            android:id="@+id/location_pointer_tv"
+                            android:layout_width="@dimen/margin_25"
+                            android:layout_height="@dimen/margin_25"
+                            android:src="@drawable/ic_place_red24pxs"
+
+                            android:layout_marginLeft="@dimen/margin_25"
+                            android:outlineAmbientShadowColor="@color/green"
+
+                            />
+                        <!--app:srcCompat="@drawable/ic_place_red"-->
+
+                        <com.customfont.textview.FuturaBkTextView
+                            android:id="@+id/dest_detail_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/location_pointer_tv"
+                            android:textColor="@color/text_colornew"
+                            android:textSize="@dimen/text_size_17"
+                            android:paddingLeft="@dimen/margin_short_3"
+
+                            android:singleLine="false"
+
+                            />
+
+                    </RelativeLayout>
+
+                    </LinearLayout>
+
+
+
+
+                    <com.customfont.textview.FuturaBkTextView
+                        android:id="@+id/pickup_date_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_13"
+                        android:paddingTop="@dimen/margin_short_1"
+                        android:layout_below="@+id/itemLinLay"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/margin_10"
+
+                        />
+
+
+                    <View
+                        android:id="@+id/divLineDetailView"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/username_border"
+                        android:layout_marginLeft="@dimen/margin_10"
+
+                        android:layout_below="@+id/pickup_date_tv"
+                        android:layout_marginTop="@dimen/margin_short_5"
+                        android:layout_marginRight="@dimen/margin_short_5"
+                        />
+
+
+
+                    <com.customfont.textview.SourceSansProBoldTextView
+                        android:id="@+id/locTypeTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/margin_25"
+                        android:paddingLeft="@dimen/margin_10"
+                        android:paddingRight="@dimen/margin_short_8"
+                        android:text="@string/loc_not_available"
+                        android:textSize="@dimen/text_size_14"
+                        android:gravity="center"
+                        android:textColor="@color/loc_nevy_blue"
+                        android:textAllCaps="true"
+                        android:layout_alignParentTop="true"
+
+
+                        />
+
+
+                    <com.customfont.textview.FuturaBkTextView
+                        android:id="@+id/pickup_loc_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/margin_25"
+                        android:paddingLeft="@dimen/margin_10"
+                        android:paddingRight="@dimen/margin_short_8"
+                        android:text="@string/loc_not_available"
+                        android:textSize="@dimen/text_size_12"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:background="@drawable/location_ribbon"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        />
+
+                    <com.customfont.textview.FuturaBkTextView
+                        android:id="@+id/pickup_loc_Trans_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/margin_25"
+                        android:paddingLeft="@dimen/margin_10"
+                        android:paddingRight="@dimen/margin_short_8"
+                        android:textSize="@dimen/text_size_12"
+                        android:gravity="center"
+                        android:textColor="@color/transparent"
+                        android:background="@drawable/location_ribbon_disabled"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:visibility="gone"
+                        />
+
+
+                    <com.customfont.button.MoskMediumButton
+                        android:id="@+id/hideAllbtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/view_height_125"
+                        android:text="@string/job_rejected"
+                        android:textColor="@color/white"
+                        android:background="@drawable/bg_screen"
+                        android:visibility="gone"
+                        />
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_below="@+id/divLineDetailView"
+
+                        >
+
+
+                        <LinearLayout
+                            android:id="@+id/container_bar_lay"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/view_height_45"
+                            android:orientation="horizontal"
+
+                            >
+
+
+
+                            <com.customfont.textview.FuturaBkTextView
+                                android:id="@+id/container_name_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size_15"
+                                android:textAllCaps="false"
+                                android:gravity="center_horizontal"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="0.8"
+
+                                />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="@dimen/margin_25"
+                                android:background="@color/divider"
+                                android:layout_gravity="center"/>
+
+
+                            <com.customfont.textview.FuturaBkTextView
+                                android:id="@+id/container_type_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size_15"
+                                android:gravity="center_horizontal"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="0.95"
+                                />
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="@dimen/margin_25"
+                                android:background="@color/divider"
+                                android:layout_gravity="center"/>
+
+                            <com.customfont.textview.FuturaBkTextView
+                                android:id="@+id/container_distnc_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/text_size_12"
+                                android:textColor="@color/red_text"
+                                android:layout_gravity="center_vertical|right"
+                                android:gravity="center_horizontal"
+                                android:layout_weight="1.14"
+                                android:paddingRight="@dimen/margin_short_3"
+                                />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/layoutbtns"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/view_height_47"
+                            android:layout_below="@+id/container_bar_lay"
+                            android:orientation="horizontal"
+                            android:visibility="gone"
+
+                            >
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_weight="1"
+
+                                >
+
+                                <com.customfont.button.MoskMediumButton
+                                    android:id="@+id/isAcceptbtn"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+
+                                    android:textColor="@color/white"
+                                    android:textAllCaps="true"
+                                    android:textSize="17sp"
+                                    android:background="@drawable/jobaceptbtn"
+                                    android:text="Accept"
+
+
+                                    />
+                            </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_weight="1"
+
+                                >
+
+
+                                <com.customfont.button.MoskMediumButton
+                                    android:id="@+id/isRejectbtn"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/job_declinebtn"
+                                    android:textColor="@color/white"
+                                    android:text="Decline"
+                                    android:textSize="@dimen/text_size_17"
+
+                                    />
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+
+                </RelativeLayout>
+
+
+
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/serial_no_tv"
+        android:layout_width="@dimen/view_height_45"
+        android:layout_height="@dimen/view_height_45"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/text_size_17"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/margin_12"
+        android:background="@drawable/circle_number"
+        android:textColor="@color/white"
+        android:visibility="gone"
+
+        />
+
+
+
+
+</RelativeLayout>

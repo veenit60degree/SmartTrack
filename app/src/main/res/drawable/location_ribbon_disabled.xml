@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item><layer-list>
+        <item>
+            <shape android:shape="rectangle">
+                <!-- background -->
+                <solid android:color="@color/white" />
+                <!-- border -->
+                <stroke android:width="0dp" android:color="@color/username_border" />
+
+                <!-- corner roundness -->
+                <corners android:bottomLeftRadius="@dimen/view_height_80"
+                    android:topLeftRadius="@dimen/view_height_80"
+                    />
+                <gradient android:startColor="@color/gray_hover_trans"
+                    android:endColor="@color/gray_hover_trans">
+
+                </gradient>
+            </shape>
+        </item>
+
+    </layer-list></item>
+</selector>

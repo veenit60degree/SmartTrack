@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:id="@+id/jobDetailLay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_screen"
+    >
+
+    <include
+        android:id="@+id/ActionbarDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/action_bar"
+        />
+
+
+
+
+    <ScrollView
+        android:id="@+id/locDetailScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/ActionbarDetail"
+        >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/gray_tab_dark_color"
+
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+
+        <include
+            android:id="@+id/includeContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/item_container_job"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_29"
+        android:paddingRight="@dimen/margin_20"
+        android:paddingBottom="@dimen/margin_short_9"
+        >
+
+        <TextView
+            android:layout_width="@dimen/view_height_130"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/location_pointer_iv"
+            android:text="@string/date_time"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_15"
+            android:layout_below="@+id/pickup_address_tv"
+            />
+
+        <TextView
+            android:id="@+id/loadDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/location_pointer_iv"
+            android:text="@string/temp_date_1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_15"
+            android:layout_below="@+id/pickup_address_tv"
+            android:singleLine="true"
+            />
+
+
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_29"
+            android:paddingRight="@dimen/margin_20"
+            android:paddingBottom="@dimen/margin_short_9"
+            >
+
+            <TextView
+                android:layout_width="@dimen/view_height_130"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/location_pointer_iv"
+                android:text="@string/load_type"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_15"
+                android:layout_below="@+id/pickup_address_tv"
+                />
+
+            <TextView
+                android:id="@+id/loadTypeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/location_pointer_iv"
+                android:text="@string/Loaded"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_15"
+                android:layout_below="@+id/pickup_address_tv"
+                android:singleLine="true"
+                />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_29"
+            android:paddingRight="@dimen/margin_20"
+            android:paddingBottom="@dimen/margin_short_5"
+            >
+
+            <TextView
+                android:layout_width="@dimen/view_height_130"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/location_pointer_iv"
+                android:text="@string/appointment"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_15"
+                android:layout_below="@+id/pickup_address_tv"
+                />
+
+            <TextView
+                android:id="@+id/appointmentTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/location_pointer_iv"
+                android:text="@string/Required"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_15"
+                android:layout_below="@+id/pickup_address_tv"
+                android:singleLine="true"
+                />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_29"
+            android:paddingRight="@dimen/margin_20"
+            android:paddingBottom="@dimen/margin_short_5"
+
+            >
+
+            <TextView
+                android:layout_width="@dimen/view_height_130"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/location_pointer_iv"
+                android:text="@string/Contact"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_15"
+                android:layout_below="@+id/pickup_address_tv"
+                android:id="@+id/robotoCondensedRegTextView"
+                android:layout_marginTop="@dimen/margin_short_2"
+                />
+
+            <TextView
+                android:id="@+id/contactTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/location_pointer_iv"
+                android:text="@string/temp_contact"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_15"
+                android:layout_below="@+id/pickup_address_tv"
+                android:layout_marginTop="@dimen/margin_short_2"
+                android:singleLine="true"
+                />
+
+
+            <ImageView
+                android:id="@+id/contactBtn"
+                android:layout_width="@dimen/margin_21"
+                android:layout_height="@dimen/margin_21"
+                android:layout_marginLeft="@dimen/margin_12"
+                android:src="@drawable/phone_dial"
+                android:visibility="gone"
+                />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_29"
+            android:paddingRight="@dimen/margin_20"
+            android:paddingBottom="@dimen/margin_short_9"
+            android:paddingTop="@dimen/margin_short_1"
+            >
+
+            <TextView
+                android:layout_width="@dimen/view_height_130"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/location_pointer_iv"
+                android:text="@string/Truck_No"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_15"
+                android:layout_below="@+id/pickup_address_tv"
+                />
+
+            <TextView
+                android:id="@+id/truckNoTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/location_pointer_iv"
+                android:text="@string/temp_truckNo"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_15"
+                android:layout_below="@+id/pickup_address_tv"
+                android:singleLine="true"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_29"
+            android:paddingRight="@dimen/margin_20"
+            android:paddingBottom="@dimen/margin_29"
+            >
+
+            <TextView
+                android:layout_width="@dimen/view_height_130"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/location_pointer_iv"
+                android:text="@string/Chassis_No"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_15"
+                android:layout_below="@+id/pickup_address_tv"
+                />
+
+            <TextView
+                android:id="@+id/chassiesNoTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/location_pointer_iv"
+                android:text="@string/temp_chassiesNo"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_15"
+                android:layout_below="@+id/pickup_address_tv"
+                android:singleLine="true"
+                />
+
+
+
+        </LinearLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/contnrNoInputType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.App.Base"
+            android:paddingLeft="@dimen/margin_22"
+            android:paddingRight="@dimen/margin_22"
+            android:visibility="gone"
+
+            >
+
+
+            <EditText
+                android:id="@+id/contnrNoEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_16"
+                android:textColorHint="@color/white_hover"
+                android:imeOptions="actionNext"
+                android:textAllCaps="true"
+                android:theme="@style/Theme.App.Base"
+                android:singleLine="true"
+                android:hint="@string/Container_No"
+
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tareWeightInputType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.App.Base"
+            android:paddingLeft="@dimen/margin_22"
+            android:paddingRight="@dimen/margin_22"
+            android:visibility="gone"
+
+            >
+
+
+            <EditText
+                android:id="@+id/tareWeightEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_16"
+                android:textColorHint="@color/white_hover"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:theme="@style/Theme.App.Base"
+                android:singleLine="true"
+                android:hint="@string/tare_Weight"
+
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/btnDriverJob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/arrived"
+            android:textSize="@dimen/text_size_20"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginRight="@dimen/margin_15"
+            android:layout_marginBottom="@dimen/margin_29"
+            android:textColor="@color/blue_text_color"
+            android:background="@drawable/ripple"
+
+            android:layout_marginTop="@dimen/view_height_40"
+            android:textStyle="bold"
+
+            />
+
+        <!--style="@style/RobotoCondensedRegularBtn"-->
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

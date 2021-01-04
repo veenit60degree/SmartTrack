@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/trans_parent"
+
+>
+
+    <RelativeLayout
+        android:id="@+id/mainlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/slide_background"
+        android:paddingBottom="@dimen/view_height_50"
+        android:paddingRight="@dimen/view_height_70"
+        android:paddingTop="@dimen/view_height_50">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/drawer_drawable"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:id="@+id/leftLay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+
+
+                <LinearLayout
+                    android:id="@+id/headerLay"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_height_210"
+                    android:background="@drawable/header_background"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/slideOffBtn"
+                        android:layout_width="@dimen/view_height_35"
+                        android:layout_height="@dimen/view_height_35"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:padding="@dimen/margin_short_5"
+                        android:paddingLeft="@dimen/margin_16"
+                        android:src="@drawable/header_slide_menu"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/userProfileImgVw"
+                        android:layout_width="@dimen/view_height_80"
+                        android:layout_height="@dimen/view_height_80"
+                        android:layout_marginBottom="@dimen/margin_short_1"
+                        android:layout_marginTop="@dimen/margin_short_7"
+                        android:paddingLeft="@dimen/margin_16"
+                        android:src="@drawable/proimg"
+
+                        />
+
+                    <com.customfont.textview.CalibriTextView
+                        android:id="@+id/usernameTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/margin_16"
+                        android:paddingTop="@dimen/margin_13"
+                        android:text="John"
+                        android:textColor="@color/white_hover"
+                        android:textSize="@dimen/text_size_21" />
+
+                    <RelativeLayout
+                        android:id="@+id/myProfileLay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_short_7"
+                        android:background="@drawable/slider_list_selector"
+                        android:paddingLeft="@dimen/margin_16"
+
+                        >
+
+                        <com.customfont.textview.CalibriBoldTextView
+                            android:id="@+id/myProfileTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:paddingBottom="@dimen/margin_short_9"
+                            android:paddingTop="@dimen/margin_10"
+                            android:text="My Profile"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_14" />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/rl1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/headerLay"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="@dimen/margin_13"
+                    android:orientation="vertical">
+
+                    <!-- profile layout -->
+
+
+                    <RelativeLayout
+                        android:id="@+id/homeLay"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/view_height_45"
+                        android:background="@drawable/slider_list_selector"
+
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/homeIV"
+                            android:layout_width="@dimen/view_height_30"
+                            android:layout_height="@dimen/view_height_30"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/margin_11"
+                            android:src="@drawable/home" />
+
+                        <com.customfont.textview.CalibriTextView
+                            android:id="@+id/homeTxtView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/margin_short_8"
+                            android:layout_toRightOf="@+id/homeIV"
+                            android:text="@string/my_jobs"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/text_size_17" />
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/selfAssignLay"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/view_height_45"
+                        android:background="@drawable/slider_list_selector"
+
+
+                        >
+
+
+                        <ImageView
+                            android:id="@+id/selfAssignIV"
+                            android:layout_width="@dimen/view_height_30"
+                            android:layout_height="@dimen/view_height_30"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/margin_11"
+                            android:src="@drawable/self_assign" />
+
+                        <com.customfont.textview.CalibriTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/margin_short_8"
+                            android:layout_toRightOf="@+id/selfAssignIV"
+                            android:text="Self Assign"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/text_size_17" />
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/settingsLay"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/view_height_45"
+                        android:background="@drawable/slider_list_selector"
+
+
+                        >
+
+
+                        <ImageView
+                            android:id="@+id/settingsIV"
+                            android:layout_width="@dimen/view_height_30"
+                            android:layout_height="@dimen/view_height_30"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/margin_11"
+                            android:src="@drawable/settings" />
+
+
+                        <com.customfont.textview.CalibriTextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/margin_short_8"
+                            android:layout_toRightOf="@+id/settingsIV"
+                            android:text="@string/action_settings"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/text_size_17" />
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/aboutUsLay"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/view_height_30"
+                        android:layout_marginTop="@dimen/view_height_45"
+
+                        android:clickable="false"
+
+                        >
+                        <!--android:background="@drawable/slider_list_selector"-->
+
+                        <com.customfont.textview.CalibriTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/margin_16"
+                            android:clickable="false"
+                            android:text="About Us"
+                            android:textColor="@color/white_trans"
+                            android:textSize="@dimen/text_size_14" />
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/privacyPolicyLay"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/view_height_30"
+
+                        android:clickable="false"
+
+                        >
+
+
+                        <com.customfont.textview.CalibriTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/margin_16"
+                            android:clickable="false"
+                            android:text="Privacy policy"
+                            android:textColor="@color/white_trans"
+                            android:textSize="@dimen/text_size_14" />
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/logoutLay"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/view_height_40"
+                        android:background="@drawable/slider_list_selector">
+
+
+                        <com.customfont.textview.CalibriTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/margin_16"
+                            android:text="Log Out"
+                            android:textColor="@color/white_trans"
+                            android:textSize="@dimen/text_size_17" />
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <com.customfont.textview.CalibriTextView
+        android:id="@+id/appVersionTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="@dimen/margin_16"
+        android:text="@string/App_Version"
+        android:textColor="@color/white_trans"
+        android:textSize="@dimen/text_size_16"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        />
+
+    </RelativeLayout>
